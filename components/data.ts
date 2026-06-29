@@ -28,8 +28,6 @@ import {
 export const navItems = [
   "Home",
   "Programs",
-  "Free webinar",
-  "Gallery",
   "About us",
   "Contact us",
 ];
@@ -152,3 +150,4 @@ export const icons = {
   Rocket,
   X,
 };
+

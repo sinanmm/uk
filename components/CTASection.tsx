@@ -1,4 +1,10 @@
-import { ConsultationButton, EnrollButton, WebinarButton } from "./Buttons";
+﻿import {
+  EnrollButton,
+  FacebookButton,
+  InstagramButton,
+  WebinarButton,
+  WhatsAppButton,
+} from "./Buttons";
 import { Rocket } from "lucide-react";
 
 export default function CTASection() {
@@ -25,8 +31,12 @@ export default function CTASection() {
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <EnrollButton compact />
-              <ConsultationButton />
               <WebinarButton />
+            </div>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <WhatsAppButton />
+              <InstagramButton />
+              <FacebookButton />
             </div>
           </div>
         </div>

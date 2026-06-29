@@ -2,7 +2,6 @@ import AudienceSection from "@/components/AudienceSection";
 import ComparisonSection from "@/components/ComparisonSection";
 import CTASection from "@/components/CTASection";
 import CurriculumSection from "@/components/CurriculumSection";
-import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import IncludedSection from "@/components/IncludedSection";
@@ -31,9 +30,8 @@ export default function Home() {
           <InvestmentSection />
           <WhyPSASection />
         </section>
-        <section className="section-shell grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+        <section className="section-shell">
           <ComparisonSection />
-          <FAQSection />
         </section>
         <CTASection />
       </main>

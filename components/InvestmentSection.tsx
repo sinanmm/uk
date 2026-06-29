@@ -1,4 +1,4 @@
-﻿import { Check } from "lucide-react";
+import { Check } from "lucide-react";
 import { EnrollButton } from "./Buttons";
 
 const planPoints = {
@@ -12,12 +12,14 @@ function PricingCard({
   suffix,
   points,
   blue = false,
+  href = "#investment",
 }: {
   title: string;
   price: string;
   suffix: string;
   points: string[];
   blue?: boolean;
+  href?: string;
 }) {
   return (
     <div className="section-card flex min-h-[306px] flex-1 flex-col items-center px-6 py-6 text-center transition duration-200 hover:-translate-y-1 hover:shadow-soft">
@@ -37,13 +39,13 @@ function PricingCard({
       <div className="mt-auto w-full">
         {blue ? (
           <a
-            href="#investment"
+            href={href}
             className="inline-flex w-full items-center justify-center rounded-md bg-blue-700 px-6 py-3 text-[13px] font-extrabold uppercase text-white shadow-[0_12px_24px_rgba(29,78,216,0.22)] transition hover:scale-[1.03] hover:bg-blue-800"
           >
             ENROLL NOW
           </a>
         ) : (
-          <a href="#investment" className="btn-primary w-full px-6 py-3">ENROLL NOW</a>
+          <a href={href} className="btn-primary w-full px-6 py-3">ENROLL NOW</a>
         )}
       </div>
     </div>
@@ -55,14 +57,25 @@ export default function InvestmentSection() {
     <section id="investment" className="section-card slide-up p-7">
       <h2 className="mb-7 text-center text-[19px] font-black text-brand-navy">INVESTMENT</h2>
       <div className="relative flex flex-col gap-5 sm:flex-row sm:items-stretch">
-        <PricingCard title="PAY IN FULL" price="Â£300" suffix="+ VAT" points={planPoints.full} />
+        <PricingCard title="PAY IN FULL" price="£300" suffix="+ VAT" points={planPoints.full} />
         <div className="absolute left-1/2 top-1/2 z-10 hidden size-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-slate-300 text-[11px] font-black text-brand-navy sm:flex">
           OR
         </div>
         <div className="flex justify-center text-xs font-black text-slate-500 sm:hidden">OR</div>
-        <PricingCard title="MONTHLY PLAN" price="Â£100" suffix="+ VAT / month" points={planPoints.monthly} blue />
+        <PricingCard
+          title="MONTHLY PLAN"
+          price={"\u00A3100"}
+          suffix="+ VAT / month"
+          points={planPoints.monthly}
+          blue
+          href="https://buy.stripe.com/00wcN67wZfIP9ca5vLaMU00"
+        />
       </div>
     </section>
   );
 }
+
+
+
+
 

@@ -9,9 +9,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Idea to Launch | Pure Startup Academy",
+  title: "Pure Startup Academy",
   description:
-    "Turn Your Business Idea into a Launch-Ready Business with Pure Startup Academy.",
+    "Practical entrepreneurship programmes that help future founders launch, grow, and lead businesses with confidence.",
 };
 
 export default function RootLayout({
