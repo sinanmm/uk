@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
@@ -9,12 +9,11 @@ import Logo from "./Logo";
 
 const hrefFor = (item: string) => {
   const map: Record<string, string> = {
-    Home: "/",
-    Programs: "/programs",
-    "Free webinar": "/#webinar",
-    Gallery: "/#gallery",
-    "About us": "/about",
-    "Contact us": "/#contact",
+    Home: "/#home",
+    Programs: "/#programmes",
+    "About Us": "/about",
+    "Free Downloads": "/#free-downloads",
+    Contact: "/#contact",
   };
 
   return map[item] ?? "/";
@@ -24,25 +23,25 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/96 shadow-[0_10px_35px_rgba(7,22,66,0.06)] backdrop-blur-xl">
-      <nav className="section-shell flex h-[86px] items-center justify-between gap-5">
+    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-xl">
+      <nav className="section-shell flex h-[120px] items-center justify-between gap-5">
         <Link
           href="/"
-          className="group flex h-16 w-[160px] items-center transition duration-300 hover:scale-[1.025]"
+          className="group flex h-32 w-[320px] items-center transition duration-300 hover:scale-[1.02]"
           aria-label="Pure Startup Academy home"
         >
-          <Logo className="h-16 w-auto" />
+          <Logo className="h-32 w-auto" />
         </Link>
 
-        <div className="hidden items-center gap-9 lg:flex">
+        <div className="hidden items-center gap-10 lg:flex">
           {navItems.map((item) => (
             <Link
               key={item}
               href={hrefFor(item)}
-              className="nav-link group relative py-3 text-[14px] font-bold text-brand-ink transition duration-300 hover:-translate-y-0.5 hover:text-brand-green"
+              className="nav-link group relative py-3 text-[17px] font-semibold text-brand-navy transition duration-300 hover:text-brand-navy"
             >
               {item}
-              <span className="absolute inset-x-0 bottom-1 h-[2px] origin-left scale-x-0 rounded-full bg-brand-green transition-transform duration-300 group-hover:scale-x-100" />
+              <span className="absolute inset-x-0 bottom-0 h-[4px] origin-left scale-x-0 rounded-full bg-brand-green transition-transform duration-300 group-hover:scale-x-100" />
             </Link>
           ))}
         </div>
@@ -63,14 +62,14 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-slate-100 bg-white lg:hidden">
+        <div className="border-t border-slate-200 bg-white lg:hidden">
           <div className="section-shell flex flex-col gap-2 py-4">
             {navItems.map((item) => (
               <Link
                 key={item}
                 href={hrefFor(item)}
                 onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-3 text-sm font-bold text-brand-navy transition duration-200 hover:bg-brand-soft hover:pl-5 hover:text-brand-green"
+                className="rounded-md px-3 py-3 text-base font-semibold text-brand-navy transition duration-200 hover:bg-brand-soft hover:text-brand-green"
               >
                 {item}
               </Link>
@@ -84,4 +83,3 @@ export default function Navbar() {
     </header>
   );
 }
-

@@ -1,4 +1,4 @@
-﻿@tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -20,9 +20,7 @@ html {
 
 body {
   min-height: 100vh;
-  background:
-    radial-gradient(circle at 90% 16%, rgba(47, 148, 36, 0.06), transparent 28rem),
-    linear-gradient(180deg, #ffffff 0%, #fbfdff 45%, #ffffff 100%);
+  background: #ffffff;
 }
 
 @layer components {
@@ -43,11 +41,11 @@ body {
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md bg-brand-green px-6 py-3 text-[13px] font-extrabold uppercase tracking-normal text-white shadow-[0_12px_24px_rgba(47,148,36,0.22)] transition duration-200 hover:scale-[1.03] hover:bg-[#247d1c] focus:outline-none focus:ring-4 focus:ring-green-200;
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[12px] bg-brand-green px-6 py-3 text-[13px] font-extrabold uppercase tracking-normal text-white transition duration-200 hover:bg-[#247d1c] focus:outline-none focus:ring-4 focus:ring-green-200;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md border border-brand-navy bg-white px-6 py-3 text-[12px] font-extrabold uppercase tracking-normal text-brand-navy transition duration-200 hover:scale-[1.03] hover:border-brand-green hover:text-brand-green focus:outline-none focus:ring-4 focus:ring-slate-200;
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[12px] border-2 border-brand-navy bg-white px-6 py-3 text-[13px] font-extrabold uppercase tracking-normal text-brand-navy transition duration-200 hover:border-brand-green hover:text-brand-green focus:outline-none focus:ring-4 focus:ring-slate-200;
   }
 
   .icon-ring {
@@ -77,27 +75,61 @@ body {
   background-size: auto, 42px 100%, auto;
 }
 
-.growth-arrow {
+.hero-swoosh {
   position: absolute;
-  right: 18px;
-  bottom: 24px;
-  width: min(38vw, 340px);
-  height: min(16vw, 150px);
-  border-right: 28px solid var(--bright-green);
-  border-bottom: 28px solid var(--bright-green);
-  border-radius: 0 0 230px 0;
-  transform: rotate(-10deg);
+  right: -16px;
+  bottom: 30px;
+  width: clamp(260px, 52vw, 520px);
+  height: clamp(84px, 16vw, 160px);
+  border-radius: 999px;
+  pointer-events: none;
 }
 
-.growth-arrow::after {
+.hero-swoosh-green {
+  border: 16px solid transparent;
+  border-top-color: var(--green);
+  border-right-color: var(--green);
+  transform: rotate(9deg);
+}
+
+.hero-swoosh-navy {
+  right: 18px;
+  bottom: 42px;
+  border: 14px solid transparent;
+  border-top-color: var(--navy);
+  border-right-color: var(--navy);
+  transform: rotate(-2deg);
+}
+
+.webinar-avatar {
+  position: relative;
+  width: 124px;
+  height: 124px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.webinar-avatar::before {
   content: "";
   position: absolute;
-  right: -35px;
-  top: -22px;
-  border-left: 54px solid var(--bright-green);
-  border-top: 31px solid transparent;
-  border-bottom: 31px solid transparent;
-  transform: rotate(-36deg);
+  left: 50%;
+  top: 28px;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+  transform: translateX(-50%);
+}
+
+.webinar-avatar::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 66px;
+  height: 66px;
+  background: #356aa9;
+  transform: translateX(-50%);
 }
 
 .city-bar {
@@ -153,13 +185,6 @@ details[open] .details-chevron {
   }
 }
 
-
 .nav-link {
-  letter-spacing: 0.01em;
-  text-shadow: 0 10px 24px rgba(7, 22, 66, 0);
+  letter-spacing: 0;
 }
-
-.nav-link:hover {
-  text-shadow: 0 10px 24px rgba(47, 148, 36, 0.15);
-}
-

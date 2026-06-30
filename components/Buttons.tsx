@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { ArrowRight, CalendarDays, Facebook, Instagram, MessageCircle } from "lucide-react";
 
 const registrationFormUrl =
@@ -10,9 +10,9 @@ export function EnrollButton({ compact = false }: { compact?: boolean }) {
       href={registrationFormUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className={`btn-primary ${compact ? "px-5 py-2.5" : ""}`}
+      className={`btn-primary ${compact ? "px-5 py-3 text-[14px]" : ""}`}
     >
-      BOOK FREE CONSULTATION <ArrowRight size={16} strokeWidth={2.8} />
+      BOOK FREE CONSULTATION {!compact ? <ArrowRight size={16} strokeWidth={2.8} /> : null}
     </Link>
   );
 }
@@ -29,7 +29,7 @@ export function WebinarButton() {
   return (
     <Link href={registrationFormUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
       <CalendarDays size={16} />
-      JOIN FREE WEBINAR
+      BOOK A FREE WEBINAR
     </Link>
   );
 }

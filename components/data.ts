@@ -25,12 +25,7 @@ import {
   X,
 } from "lucide-react";
 
-export const navItems = [
-  "Home",
-  "Programs",
-  "About us",
-  "Contact us",
-];
+export const navItems = ["Home", "Programs", "About Us", "Free Downloads", "Contact"];
 
 export const audienceCards = [
   { label: "Students", icon: GraduationCap },
@@ -150,4 +145,3 @@ export const icons = {
   Rocket,
   X,
 };
-
