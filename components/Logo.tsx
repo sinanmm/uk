@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 
 export default function Logo({ className = "h-14 w-auto" }: { className?: string }) {
   return (
@@ -6,11 +6,11 @@ export default function Logo({ className = "h-14 w-auto" }: { className?: string
       <Image
         src="/logo.jpg"
         alt="Pure Startup Academy"
-        width={150}
-        height={60}
+        width={400}
+        height={160}
         priority
-        sizes="160px"
-        className={`${className} max-h-16 object-contain`}
+        sizes="320px"
+        className={`${className} object-contain`}
       />
     </span>
   );

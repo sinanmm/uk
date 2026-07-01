@@ -53,7 +53,7 @@ export default function AboutPage() {
                 <Link href="/#programmes" className="bg-brand-green text-white px-8 py-3 rounded-full font-black uppercase tracking-wide hover:bg-green-700 transition flex items-center gap-2">
                   Explore Programs <ArrowRight size={18} />
                 </Link>
-                <Link href="#" className="bg-brand-navy text-white px-8 py-3 rounded-full font-black uppercase tracking-wide hover:bg-[#1a2f6c] transition flex items-center gap-2">
+                <Link href="https://forms.gle/RdmkJVkEP4UD1BJs5" target="_blank" rel="noopener noreferrer" className="bg-brand-navy text-white px-8 py-3 rounded-full font-black uppercase tracking-wide hover:bg-[#1a2f6c] transition flex items-center gap-2">
                   Join Free Webinar
                 </Link>
                 <Link href="/#contact" className="bg-white text-brand-navy border-2 border-brand-navy px-8 py-3 rounded-full font-black uppercase tracking-wide hover:bg-gray-50 transition">
@@ -315,18 +315,35 @@ export default function AboutPage() {
         </section>
 
         {/* SECTION 8: WHAT YOU LEARN WITH US */}
-        <section className="py-24 bg-white border-y border-gray-100">
-          <div className="max-w-[1200px] mx-auto px-4">
-            <div className="text-center mb-16">
+        <section className="py-24 bg-gray-50 border-y border-gray-100 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-50/50 via-transparent to-transparent opacity-60"></div>
+          <div className="max-w-[1200px] mx-auto px-4 relative z-10">
+            <div className="text-center mb-16 flex flex-col items-center">
               <h2 className="text-3xl md:text-4xl font-black text-brand-navy uppercase mb-4">What You Learn With Us</h2>
+              <div className="w-16 h-[3px] bg-brand-green rounded-full mb-6"></div>
               <p className="text-gray-500 font-bold tracking-wide">A comprehensive curriculum covering every aspect of building a successful business.</p>
             </div>
-            <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {[
-                "Entrepreneurial Thinking", "Goal Setting", "Productivity", "Confidence Building", "Public Speaking Fundamentals", "Business Idea Generation", "Hero Idea Concept", "Identifying Problems Worth Solving", "Market Gap Analysis", "Scalability Assessment", "Customer Research", "Competitor Analysis", "SWOT Analysis", "Feasibility Studies", "Product-Market Fit", "Business Model Canvas", "Revenue Streams", "Cost Structures", "Value Proposition", "Business Planning", "Business Structures in the UK", "Sole Trader", "Limited Company", "Partnerships", "HMRC Basics", "VAT Basics", "Business Banking", "Intellectual Property", "Trademark Awareness", "Business Naming", "Mission, Vision and Core Values", "Personal Branding", "LinkedIn Optimisation", "Professional Business Profiles", "Sales Fundamentals", "Prospecting", "Building Relationships", "Objection Handling", "Networking", "Follow-Up Systems", "Referral Generation", "Instagram Strategy", "Facebook Strategy", "LinkedIn Strategy", "WhatsApp Marketing", "Content Creation", "Reels and Short Form Content", "Revenue vs Profit", "Cash Flow Management", "Pricing Strategies", "Budgeting", "ROI Calculations", "Financial Forecasting", "ChatGPT", "Canva", "CRM Systems", "Automation Tools", "Productivity Systems", "AI for Research and Content Creation", "Business Plans", "DPR Preparation", "Investor Pitch Decks", "Elevator Pitches", "Presentation Skills", "Launch Checklist", "First Customer Strategy", "90-Day Action Plan", "Business Readiness Assessment"
+                "ENTREPRENEURIAL MINDSET",
+                "IDEA GENERATION & VALIDATION",
+                "MARKET RESEARCH & ANALYSIS",
+                "BUSINESS PLANNING",
+                "LEGAL & BUSINESS STRUCTURES",
+                "BRANDING & IDENTITY",
+                "SALES & NETWORKING",
+                "DIGITAL MARKETING",
+                "FINANCIAL MANAGEMENT",
+                "AI & PRODUCTIVITY TOOLS",
+                "PITCHING & PRESENTATION",
+                "LAUNCH STRATEGY"
               ].map((item, i) => (
-                <div key={i} className="bg-gray-50 break-inside-avoid border border-gray-100 rounded-lg p-3 text-[13px] font-bold text-brand-navy flex items-start gap-3 hover:bg-green-50 hover:border-green-100 transition shadow-sm">
-                  <Check className="w-4 h-4 text-brand-green mt-0.5 flex-shrink-0 stroke-[2.5]" /> {item}
+                <div key={i} className="group bg-white border border-gray-100 rounded-xl p-5 shadow-sm hover:shadow-xl hover:border-brand-green/30 hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 relative overflow-hidden cursor-default">
+                  <div className="absolute top-0 left-0 w-1.5 h-full bg-gray-100 group-hover:bg-brand-green transition-colors duration-300"></div>
+                  <div className="w-10 h-10 rounded-full bg-green-50/50 border border-green-100 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-green transition-colors duration-300">
+                    <Check className="w-5 h-5 text-brand-green group-hover:text-white stroke-[2.5]" />
+                  </div>
+                  <span className="text-[14px] font-black text-brand-navy tracking-wide leading-snug group-hover:text-brand-green transition-colors duration-300">{item}</span>
                 </div>
               ))}
             </div>
@@ -456,7 +473,7 @@ export default function AboutPage() {
                   { title: "Duration", desc: "3 Months / 6 Months / 12 Months", icon: Calendar },
                   { title: "Delivery", desc: "Live Online Interactive Sessions", icon: MonitorPlay },
                   { title: "Live Classes", desc: "2 Sessions Per Week", icon: CalendarDays },
-                  { title: "Duration Per Session", desc: "1 Hour", icon: Clock },
+                  { title: "Duration Per Session", desc: "2 Hours", icon: Clock },
                   { title: "Total Learning Time", desc: "Approximately 8 Hours Per Month", icon: Clock },
                   { title: "Batch Options", desc: "Weekday Batch and Weekend Batch", icon: Users },
                   { title: "Includes", desc: "Q&A, assignments, tools, templates, worksheets, community support and accountability guidance", icon: Gift }
@@ -633,7 +650,7 @@ export default function AboutPage() {
               <Link href="/#programmes" className="bg-white text-brand-green px-10 py-5 rounded-full font-black uppercase tracking-widest hover:bg-gray-50 transition shadow-xl flex items-center gap-2">
                 Explore Programs <ArrowRight size={20} />
               </Link>
-              <Link href="#" className="bg-brand-navy text-white px-10 py-5 rounded-full font-black uppercase tracking-widest hover:bg-[#15357e] transition shadow-xl">
+              <Link href="https://forms.gle/RdmkJVkEP4UD1BJs5" target="_blank" rel="noopener noreferrer" className="bg-brand-navy text-white px-10 py-5 rounded-full font-black uppercase tracking-widest hover:bg-[#15357e] transition shadow-xl">
                 Join Free Webinar
               </Link>
               <Link href="/#contact" className="bg-transparent text-white border-[3px] border-white px-10 py-5 rounded-full font-black uppercase tracking-widest hover:bg-white/10 transition">

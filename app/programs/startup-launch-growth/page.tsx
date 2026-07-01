@@ -217,7 +217,9 @@ export default function Program2Page() {
                   <CalendarDays className="w-5 h-5 text-gray-500" /> BOOK CONSULTATION
                 </Link>
                 <Link
-                  href="#"
+                  href="https://forms.gle/RdmkJVkEP4UD1BJs5"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="border border-gray-300 text-brand-navy bg-white px-6 py-4 rounded font-bold uppercase tracking-wide hover:bg-gray-50 transition flex items-center gap-2 text-[14px]"
                 >
                   <PlaySquare className="w-5 h-5 text-gray-500" /> JOIN FREE WEBINAR

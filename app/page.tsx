@@ -17,6 +17,8 @@ import {
   Users,
   MonitorPlay,
   Rocket,
+  AlertTriangle,
+  Trophy,
 } from "lucide-react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -24,7 +26,7 @@ import Navbar from "@/components/Navbar";
 const consultationUrl =
   "https://forms.zohopublic.eu/infopsac1/form/PureStartupAcademyRegistrationForm/formperma/QCaZ07UK0TadmpgM_-3X9o1xBPvaI6eodbpznGjBgyM?utm_source=ig&utm_medium=social&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3";
 
-const webinarUrl = consultationUrl;
+const webinarUrl = "https://forms.gle/RdmkJVkEP4UD1BJs5";
 
 const journeySteps = [
   {
@@ -286,41 +288,78 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section-shell pt-12 sm:pt-14">
-          <div className="grid gap-8 xl:grid-cols-3 xl:gap-10">
-            <div>
-              <h3 className="text-[30px] font-black uppercase leading-none text-brand-navy">
-                THE <span className="text-[#ef534f]">PAIN</span> YOU FACE
-              </h3>
-              <div className="mt-6 space-y-4">
+        <section className="section-shell pt-16 sm:pt-20">
+          <div className="grid gap-8 lg:grid-cols-3 xl:gap-10">
+            {/* PAIN CARD */}
+            <div className="bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 border-t-4 border-t-[#ef534f] p-8 relative overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+              <div className="absolute top-0 right-0 -mr-6 -mt-6 opacity-[0.03] transform rotate-12">
+                <AlertTriangle size={120} />
+              </div>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center border border-red-100 flex-shrink-0">
+                  <AlertTriangle size={24} className="text-[#ef534f]" />
+                </div>
+                <h3 className="text-[24px] lg:text-[28px] font-black uppercase leading-tight text-brand-navy">
+                  THE <span className="text-[#ef534f]">PAIN</span> YOU FACE
+                </h3>
+              </div>
+              <div className="space-y-5">
                 {painPoints.map((item) => (
                   <div key={item} className="flex items-start gap-3">
-                    <CircleX size={20} className="mt-1 shrink-0 text-[#ef534f]" />
-                    <p className="text-[17px] font-semibold leading-tight text-brand-navy">{item}</p>
+                    <div className="bg-red-50/80 rounded-full p-1 mt-0.5">
+                      <CircleX size={18} className="shrink-0 text-[#ef534f] stroke-[2.5]" />
+                    </div>
+                    <p className="text-[16px] font-bold leading-snug text-brand-navy">{item}</p>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="xl:border-l xl:border-r xl:border-slate-200 xl:px-8">
-              <h3 className="text-[30px] font-black uppercase leading-none text-brand-navy">THE SOLUTION WE PROVIDE</h3>
-              <div className="mt-6 space-y-4">
+
+            {/* SOLUTION CARD */}
+            <div className="bg-white rounded-2xl shadow-[0_12px_40px_rgb(0,0,0,0.08)] border border-gray-100 border-t-4 border-t-brand-green p-8 relative overflow-hidden transform lg:-translate-y-4 hover:shadow-xl hover:-translate-y-5 transition-all duration-300">
+              <div className="absolute top-0 right-0 -mr-6 -mt-6 opacity-[0.03] transform -rotate-12">
+                <Lightbulb size={120} />
+              </div>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center border border-green-100 flex-shrink-0">
+                  <Lightbulb size={24} className="text-brand-green" />
+                </div>
+                <h3 className="text-[24px] lg:text-[28px] font-black uppercase leading-tight text-brand-navy">
+                  THE <span className="text-brand-green">SOLUTION</span> WE PROVIDE
+                </h3>
+              </div>
+              <div className="space-y-5">
                 {solutionPoints.map((item) => (
                   <div key={item} className="flex items-start gap-3">
-                    <CircleCheckBig size={20} className="mt-1 shrink-0 text-brand-green" />
-                    <p className="text-[17px] font-semibold leading-tight text-brand-navy">{item}</p>
+                    <div className="bg-green-50/80 rounded-full p-1 mt-0.5">
+                      <CircleCheckBig size={18} className="shrink-0 text-brand-green stroke-[2.5]" />
+                    </div>
+                    <p className="text-[16px] font-bold leading-snug text-brand-navy">{item}</p>
                   </div>
                 ))}
               </div>
             </div>
-            <div>
-              <h3 className="text-[30px] font-black uppercase leading-none text-brand-navy">
-                THE <span className="text-[#2166d1]">OUTPUT</span> YOU RECEIVE
-              </h3>
-              <div className="mt-6 space-y-4">
+
+            {/* OUTPUT CARD */}
+            <div className="bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 border-t-4 border-t-[#2166d1] p-8 relative overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+              <div className="absolute top-0 right-0 -mr-6 -mt-6 opacity-[0.03] transform rotate-12">
+                <Trophy size={120} />
+              </div>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center border border-blue-100 flex-shrink-0">
+                  <Trophy size={24} className="text-[#2166d1]" />
+                </div>
+                <h3 className="text-[24px] lg:text-[28px] font-black uppercase leading-tight text-brand-navy">
+                  THE <span className="text-[#2166d1]">OUTPUT</span> YOU RECEIVE
+                </h3>
+              </div>
+              <div className="space-y-5">
                 {outputPoints.map((item) => (
                   <div key={item} className="flex items-start gap-3">
-                    <CircleCheckBig size={20} className="mt-1 shrink-0 text-[#2166d1]" />
-                    <p className="text-[17px] font-semibold leading-tight text-brand-navy">{item}</p>
+                    <div className="bg-blue-50/80 rounded-full p-1 mt-0.5">
+                      <CircleCheckBig size={18} className="shrink-0 text-[#2166d1] stroke-[2.5]" />
+                    </div>
+                    <p className="text-[16px] font-bold leading-snug text-brand-navy">{item}</p>
                   </div>
                 ))}
               </div>
@@ -348,8 +387,10 @@ export default function Home() {
           <div className="overflow-hidden rounded-[22px] bg-brand-navy text-white shadow-[0_22px_50px_rgba(7,22,66,0.16)]">
             <div className="grid gap-0 lg:grid-cols-[1.15fr_0.55fr_0.8fr]">
               <div className="px-6 py-7 sm:px-8 md:px-10 md:py-9">
-                <div className="inline-flex rounded-[8px] bg-brand-green px-4 py-2 text-[16px] font-black uppercase">LIVE</div>
-                <p className="mt-4 text-[18px] font-semibold text-white/90">Monthly Free Live Webinar</p>
+                <div className="inline-flex rounded-[8px] bg-brand-green px-4 py-2 text-[16px] font-black uppercase shadow-[0_0_15px_rgba(47,148,36,0.5)]">LIVE</div>
+                <p className="mt-4 text-[18px] font-semibold text-white/90">
+                  Monthly <span className="text-brand-green font-black">Free Live Webinar</span>
+                </p>
                 <h3 className="mt-4 text-[36px] font-black leading-[1.04] sm:text-[44px]">From Idea to First Customer</h3>
                 <p className="mt-4 max-w-[520px] text-[18px] leading-tight text-white/86">
                   Join our free webinar and take the first step in your entrepreneurial journey.
@@ -381,7 +422,11 @@ export default function Home() {
               <div className="bg-[#122a5a] px-6 py-7 sm:px-8 md:px-10 md:py-9">
                 <p className="text-[18px] font-semibold text-white/90">During the webinar you&apos;ll learn:</p>
                 <div className="mt-5 space-y-4">
-                  {["First customer strategy", "Avoid startup mistakes", "Practical launch steps"].map((item) => (
+                  {[
+                    "Validate your business idea", 
+                    "Find your first customers", 
+                    "Avoid Common startup mistakes"
+                  ].map((item) => (
                     <div key={item} className="flex items-center gap-3">
                       <CircleCheckBig size={20} className="shrink-0 text-brand-green" />
                       <p className="text-[17px] text-white/90">{item}</p>
@@ -391,16 +436,16 @@ export default function Home() {
                 <div className="mt-6 rounded-[18px] bg-white p-5 text-center text-brand-navy">
                   <p className="text-[18px] font-semibold text-brand-green">Next Webinar</p>
                   <p className="mt-2 text-[34px] font-black uppercase leading-none">5 JULY 2026</p>
-                  <p className="mt-2 text-[18px] font-semibold uppercase text-slate-500">Saturday</p>
-                  <p className="mt-3 text-[18px] font-black uppercase">6:00 PM UK Time</p>
+                  <p className="mt-2 text-[18px] font-semibold uppercase text-slate-500">Sunday</p>
+                  <p className="mt-3 text-[18px] font-black uppercase">02:00 PM UK Time</p>
                 </div>
                 <Link
                   href={webinarUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary mt-5 w-full rounded-[10px] py-4 text-[17px] normal-case tracking-normal"
+                  className="btn-primary mt-5 w-full rounded-[10px] py-4 text-[17px] font-black uppercase tracking-wide flex justify-center shadow-lg hover:shadow-brand-green/30"
                 >
-                  REGISTER FREE
+                  JOIN THE FREE WEBINAR
                 </Link>
               </div>
             </div>

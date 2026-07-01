@@ -13,7 +13,7 @@ const hrefFor = (item: string) => {
     Programs: "/#programmes",
     "About Us": "/about",
     "Free Downloads": "/#free-downloads",
-    Contact: "/#contact",
+    Contact: "/contact",
   };
 
   return map[item] ?? "/";

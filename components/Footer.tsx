@@ -20,8 +20,8 @@ export default function Footer() {
     <footer id="contact" className="mt-10 bg-brand-navy text-white">
       <div className="section-shell grid gap-8 py-8 md:grid-cols-[1.1fr_1fr_1fr_0.8fr] md:items-start">
         <div>
-          <Link href="/" className="block h-16 w-[170px]" aria-label="Pure Startup Academy home">
-            <Logo className="h-16 w-auto brightness-[1.05] contrast-100" />
+          <Link href="/" className="block h-28 w-[280px]" aria-label="Pure Startup Academy home">
+            <Logo className="h-28 w-auto brightness-[1.05] contrast-100" />
           </Link>
         </div>
 
