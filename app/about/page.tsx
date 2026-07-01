@@ -72,19 +72,19 @@ export default function AboutPage() {
         {/* SECTION 1: WHO WE ARE */}
         <section className="py-20 bg-gray-50/50">
           <div className="max-w-[1200px] mx-auto px-4">
-            <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col items-center">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="hidden sm:flex gap-1"><div className="w-4 h-1 bg-brand-green rounded-full transform -rotate-45"></div><div className="w-2 h-1 bg-brand-green rounded-full transform -rotate-45"></div></div>
-                <h2 className="text-3xl md:text-4xl font-black text-brand-navy uppercase">Who We Are</h2>
-                <div className="hidden sm:flex gap-1"><div className="w-2 h-1 bg-brand-green rounded-full transform -rotate-45"></div><div className="w-4 h-1 bg-brand-green rounded-full transform -rotate-45"></div></div>
+            <div className="text-center max-w-4xl mx-auto mb-20 flex flex-col items-center">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="hidden sm:flex gap-1"><div className="w-5 h-1.5 bg-brand-green rounded-full transform -rotate-45"></div><div className="w-2.5 h-1.5 bg-brand-green rounded-full transform -rotate-45"></div></div>
+                <h2 className="text-4xl md:text-5xl font-black text-brand-navy uppercase tracking-wide">Who We Are</h2>
+                <div className="hidden sm:flex gap-1"><div className="w-2.5 h-1.5 bg-brand-green rounded-full transform -rotate-45"></div><div className="w-5 h-1.5 bg-brand-green rounded-full transform -rotate-45"></div></div>
               </div>
-              <p className="text-lg text-gray-600 leading-relaxed font-medium">
+              <p className="text-xl text-gray-700 leading-relaxed font-semibold">
                 Pure Startup Academy is built to bridge the gap between education and entrepreneurship. Most people receive training before starting a job, but very few receive practical training before starting a business. Yet the risks and responsibilities of business are often far greater.
                 <br/><br/>
                 Pure Startup Academy helps aspiring entrepreneurs gain the knowledge, guidance, tools, structure, and confidence they need before taking the leap into business.
               </p>
             </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {[
                 { title: "Practical entrepreneurship education", icon: BookOpen },
                 { title: "Startup guidance and mentorship", icon: Users },
@@ -93,11 +93,11 @@ export default function AboutPage() {
                 { title: "Sales and marketing fundamentals", icon: Target },
                 { title: "Confidence-building for future founders", icon: ShieldCheck }
               ].map((item, i) => (
-                <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4 hover:shadow-md transition">
-                  <div className="bg-green-50 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 border border-green-100">
-                    <item.icon className="w-6 h-6 text-brand-green stroke-[1.5]" />
+                <div key={i} className="group bg-white p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex items-center gap-5 hover:shadow-[0_12px_40px_rgba(47,148,36,0.1)] hover:-translate-y-1.5 transition-all duration-300">
+                  <div className="bg-green-50/80 w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0 border border-green-100 group-hover:bg-brand-green transition-colors duration-300">
+                    <item.icon className="w-7 h-7 text-brand-green stroke-[1.5] group-hover:text-white transition-colors duration-300" />
                   </div>
-                  <h3 className="font-bold text-brand-navy leading-tight">{item.title}</h3>
+                  <h3 className="font-black text-brand-navy text-[17px] leading-snug">{item.title}</h3>
                 </div>
               ))}
             </div>
@@ -130,10 +130,10 @@ export default function AboutPage() {
                   { title: "5. Poor Validation", desc: "Many businesses fail because they build products or services customers do not want.", icon: Lightbulb },
                   { title: "6. No Mentorship", desc: "Many entrepreneurs try to build businesses alone without guidance, feedback, or accountability.", icon: Users }
                 ].map((item, i) => (
-                  <div key={i} className="bg-gray-50 border border-gray-100 p-6 rounded-2xl hover:bg-white hover:shadow-lg transition duration-300">
-                    <item.icon className="w-8 h-8 text-brand-navy mb-4 opacity-70 stroke-[1.5]" />
-                    <h3 className="text-lg font-black text-brand-navy mb-2 uppercase">{item.title}</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed font-medium">{item.desc}</p>
+                  <div key={i} className="bg-gray-50 border border-gray-100 p-8 rounded-[24px] hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <item.icon className="w-10 h-10 text-brand-navy mb-5 opacity-70 stroke-[1.5]" />
+                    <h3 className="text-xl md:text-[22px] font-black text-brand-navy mb-3 uppercase leading-tight">{item.title}</h3>
+                    <p className="text-gray-700 text-base md:text-[17px] leading-relaxed font-bold">{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -294,20 +294,27 @@ export default function AboutPage() {
         </section>
 
         {/* SECTION 7: WHO WE HELP */}
-        <section className="py-20 bg-gray-50/50">
+        <section className="py-24 bg-white relative overflow-hidden">
+          <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
           <div className="max-w-[1200px] mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black text-brand-navy uppercase mb-4">Who We Help</h2>
-              <div className="w-16 h-[3px] bg-brand-green mx-auto rounded-full"></div>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-black text-brand-navy uppercase mb-6 tracking-wide">Who We Help</h2>
+              <div className="w-20 h-[4px] bg-brand-green mx-auto rounded-full shadow-[0_0_15px_rgba(47,148,36,0.5)]"></div>
             </div>
-            <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6 max-w-[1000px] mx-auto">
               {[
                 "Students", "Graduates", "Aspiring Entrepreneurs", "Working Professionals",
                 "Side Hustlers", "Employees considering self-employment", "Startup Founders",
                 "Early-stage Business Owners", "Future Business Leaders", "Anyone with a Business Idea"
               ].map((item, i) => (
-                <div key={i} className="bg-white border border-gray-200 px-6 py-3 rounded-full shadow-sm text-brand-navy font-black uppercase text-[12px] tracking-widest flex items-center gap-2 hover:border-brand-green hover:text-brand-green transition cursor-default">
-                  <Users className="w-4 h-4 opacity-70 stroke-[2]" /> {item}
+                <div 
+                  key={i} 
+                  className="group bg-white border border-gray-100 px-6 py-4 md:px-8 md:py-4 rounded-[20px] shadow-[0_8px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_12px_30px_rgba(47,148,36,0.15)] text-brand-navy font-black uppercase text-[13px] md:text-[14px] tracking-widest flex items-center gap-4 hover:-translate-y-1.5 hover:border-brand-green/30 transition-all duration-300 cursor-default"
+                >
+                  <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-brand-green transition-colors duration-300 flex-shrink-0">
+                    <Users className="w-5 h-5 text-brand-green group-hover:text-white stroke-[2.5]" />
+                  </div>
+                  {item}
                 </div>
               ))}
             </div>
@@ -462,10 +469,10 @@ export default function AboutPage() {
             
             <div>
               <div className="flex items-center gap-4 mb-10">
-                <div className="w-12 h-12 rounded-full bg-brand-green flex items-center justify-center shadow-sm">
-                  <CalendarDays className="w-6 h-6 text-white" />
+                <div className="w-14 h-14 rounded-full bg-brand-green flex items-center justify-center shadow-lg shadow-brand-green/30">
+                  <CalendarDays className="w-7 h-7 text-white" />
                 </div>
-                <h2 className="text-3xl font-black text-brand-navy uppercase">Programme Format</h2>
+                <h2 className="text-4xl lg:text-5xl font-black text-brand-navy uppercase tracking-wide">Programme Format</h2>
               </div>
               
               <div className="space-y-4">
@@ -478,13 +485,13 @@ export default function AboutPage() {
                   { title: "Batch Options", desc: "Weekday Batch and Weekend Batch", icon: Users },
                   { title: "Includes", desc: "Q&A, assignments, tools, templates, worksheets, community support and accountability guidance", icon: Gift }
                 ].map((item, i) => (
-                  <div key={i} className="bg-white p-5 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-gray-100 flex items-center gap-5 hover:-translate-y-1 transition-transform">
-                    <div className="w-12 h-12 rounded-full bg-green-50 border border-green-100 flex items-center justify-center flex-shrink-0">
-                      <item.icon className="w-6 h-6 text-brand-green stroke-[1.5]" />
+                  <div key={i} className="group bg-white p-6 md:p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex items-center gap-6 hover:shadow-[0_12px_40px_rgba(47,148,36,0.1)] hover:-translate-y-1.5 transition-all duration-300">
+                    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-green-50/80 border border-green-100 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-green transition-colors duration-300">
+                      <item.icon className="w-7 h-7 md:w-8 md:h-8 text-brand-green stroke-[1.5] group-hover:text-white transition-colors duration-300" />
                     </div>
                     <div>
-                      <h4 className="text-[11px] font-black text-brand-green uppercase tracking-widest mb-1">{item.title}</h4>
-                      <p className="font-bold text-brand-navy text-[15px] leading-snug">{item.desc}</p>
+                      <h4 className="text-[13px] md:text-[14px] font-black text-brand-green uppercase tracking-widest mb-1 md:mb-2">{item.title}</h4>
+                      <p className="font-black text-brand-navy text-[16px] md:text-[18px] leading-snug">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -493,12 +500,12 @@ export default function AboutPage() {
 
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 rounded-full bg-brand-navy flex items-center justify-center shadow-sm">
-                  <Briefcase className="w-6 h-6 text-white" />
+                <div className="w-14 h-14 rounded-full bg-brand-navy flex items-center justify-center shadow-lg shadow-brand-navy/30">
+                  <Briefcase className="w-7 h-7 text-white" />
                 </div>
-                <h2 className="text-3xl font-black text-brand-navy uppercase">Tools & Resources</h2>
+                <h2 className="text-4xl lg:text-5xl font-black text-brand-navy uppercase tracking-wide">Tools & Resources</h2>
               </div>
-              <p className="text-gray-600 mb-10 font-medium text-lg leading-relaxed">
+              <p className="text-gray-700 mb-10 font-bold text-lg md:text-xl leading-relaxed max-w-xl">
                 Pure Startup Academy gives participants access to practical tools and templates that save time, money, and frustration.
               </p>
               
@@ -512,8 +519,8 @@ export default function AboutPage() {
                   "AI Toolkit for Entrepreneurs", "LinkedIn Optimisation Guide", "Public Speaking Resources",
                   "Community and Networking"
                 ].map((item, i) => (
-                  <div key={i} className="bg-white border border-gray-200 text-brand-navy text-[13px] font-black px-5 py-3 rounded-xl flex items-center gap-3 shadow-sm hover:border-brand-green hover:bg-green-50 transition cursor-default">
-                    <FileText className="w-4 h-4 text-brand-green stroke-[2.5]" /> {item}
+                  <div key={i} className="group bg-white border border-gray-100 text-brand-navy text-[16px] md:text-[17px] font-black px-8 py-5 rounded-2xl flex items-center gap-4 shadow-[0_4px_15px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_25px_rgba(47,148,36,0.12)] hover:-translate-y-1 hover:border-brand-green/30 hover:bg-green-50/30 transition-all duration-300 cursor-default">
+                    <FileText className="w-6 h-6 text-brand-green stroke-[2.5]" /> {item}
                   </div>
                 ))}
               </div>

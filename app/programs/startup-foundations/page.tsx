@@ -513,38 +513,41 @@ export default function Program1Page() {
           <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 items-center">
             <div className="space-y-6">
               {whyLearnLeft.map((item, i) => (
-                <div key={i} className="bg-white border border-gray-100 rounded-[16px] p-5 flex items-center gap-4 shadow-sm">
-                  <div className="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center flex-shrink-0">
-                    <item.icon className="w-6 h-6 text-brand-green" />
+                <div key={i} className="group bg-white border border-gray-100 rounded-[20px] p-6 flex items-center gap-5 shadow-[0_4px_15px_rgb(0,0,0,0.03)] hover:shadow-[0_12px_30px_rgba(47,148,36,0.12)] hover:-translate-y-1.5 hover:border-brand-green/30 transition-all duration-300">
+                  <div className="w-14 h-14 rounded-full bg-green-50/80 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-green transition-colors duration-300">
+                    <item.icon className="w-7 h-7 text-brand-green group-hover:text-white transition-colors duration-300 stroke-[1.5]" />
                   </div>
-                  <span className="text-gray-700 font-bold text-[14px] leading-tight">{item.text}</span>
+                  <span className="text-brand-navy font-black text-[15px] md:text-[16px] leading-snug">{item.text}</span>
                 </div>
               ))}
             </div>
             <div className="space-y-6">
               {whyLearnRight.map((item, i) => (
-                <div key={i} className="bg-white border border-gray-100 rounded-[16px] p-5 flex items-center gap-4 shadow-sm">
-                  <div className="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center flex-shrink-0">
-                    <item.icon className="w-6 h-6 text-brand-green" />
+                <div key={i} className="group bg-white border border-gray-100 rounded-[20px] p-6 flex items-center gap-5 shadow-[0_4px_15px_rgb(0,0,0,0.03)] hover:shadow-[0_12px_30px_rgba(47,148,36,0.12)] hover:-translate-y-1.5 hover:border-brand-green/30 transition-all duration-300">
+                  <div className="w-14 h-14 rounded-full bg-green-50/80 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-green transition-colors duration-300">
+                    <item.icon className="w-7 h-7 text-brand-green group-hover:text-white transition-colors duration-300 stroke-[1.5]" />
                   </div>
-                  <span className="text-gray-700 font-bold text-[14px] leading-tight">{item.text}</span>
+                  <span className="text-brand-navy font-black text-[15px] md:text-[16px] leading-snug">{item.text}</span>
                 </div>
               ))}
             </div>
-            <div className="bg-gradient-to-br from-green-50 to-white border border-green-100 rounded-[24px] p-8 text-center flex flex-col items-center justify-center shadow-sm h-full min-h-[300px]">
-              <div className="relative w-32 h-32 mb-6">
+            <div className="bg-gradient-to-br from-green-50 via-white to-white border border-green-100 rounded-[28px] p-8 text-center flex flex-col items-center justify-center shadow-[0_8px_30px_rgba(47,148,36,0.08)] hover:shadow-[0_15px_40px_rgba(47,148,36,0.15)] hover:-translate-y-1 transition-all duration-300 h-full min-h-[340px] relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-green/5 rounded-full blur-2xl"></div>
+              <div className="absolute bottom-0 left-0 w-32 h-32 bg-brand-navy/5 rounded-full blur-2xl"></div>
+              
+              <div className="relative w-36 h-36 mb-8 transform hover:scale-110 transition-transform duration-500">
                 <Image
                   src="/golden_trophy.png"
                   alt="Trophy"
                   fill
-                  className="object-contain"
+                  className="object-contain drop-shadow-xl"
                 />
               </div>
-              <div className="bg-white border border-green-200 rounded-full px-4 py-2 flex items-center gap-2 mb-4">
-                <Target className="w-5 h-5 text-brand-green" />
-                <span className="font-black text-brand-navy text-[13px] uppercase">OUR GOAL IS YOUR SUCCESS</span>
+              <div className="bg-white border border-green-200 rounded-full px-5 py-2.5 flex items-center gap-2 mb-4 shadow-sm z-10">
+                <Target className="w-5 h-5 text-brand-green stroke-[2.5]" />
+                <span className="font-black text-brand-navy text-[14px] uppercase tracking-wide">OUR GOAL IS YOUR SUCCESS</span>
               </div>
-              <div className="flex items-center gap-2 text-[12px] font-bold text-gray-500 uppercase tracking-wider">
+              <div className="flex items-center gap-2 text-[13px] font-black text-gray-500 uppercase tracking-widest z-10">
                 <CheckCircle2 className="w-4 h-4 text-brand-green" />
                 LEARN. IMPLEMENT. GROW. SUCCEED.
               </div>
