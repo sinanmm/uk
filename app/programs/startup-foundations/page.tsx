@@ -220,7 +220,7 @@ export default function Program1Page() {
         <section className="pt-12 pb-16 px-4">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
             <div className="flex-1">
-              <div className="text-sm font-bold text-gray-500 mb-2">HOME &gt; PROGRAMS &gt; <span className="text-gray-900">FOUNDERS</span></div>
+              <div className="text-base font-bold text-gray-500 mb-2">HOME &gt; PROGRAMS &gt; <span className="text-gray-900">FOUNDERS</span></div>
               <h1 className="text-[54px] sm:text-[68px] font-black uppercase leading-[1.1] text-brand-navy">
                 IDEA TO <span className="text-brand-green">LAUNCH</span>
               </h1>
@@ -258,14 +258,14 @@ export default function Program1Page() {
                 <div className="w-14 h-14 rounded-full bg-[#eef8ec] flex items-center justify-center">
                   <feature.icon className="w-6 h-6 text-brand-green" />
                 </div>
-                <span className="text-sm font-bold text-gray-700">{feature.label}</span>
+                <span className="text-base font-bold text-gray-700">{feature.label}</span>
               </div>
             ))}
           </div>
         </section>
 
         {/* OUTCOMES SECTION */}
-        <section className="py-16 px-4 bg-white">
+        <section className="py-16 px-4 bg-prog1-pattern">
           <h2 className="text-center text-[28px] sm:text-[36px] font-black uppercase text-brand-green mb-12">
             BY THE END OF THIS PROGRAMME, YOU WILL:
           </h2>
@@ -276,7 +276,7 @@ export default function Program1Page() {
                   <div className="w-12 h-12 flex-shrink-0 rounded-full bg-green-50 flex items-center justify-center">
                     <item.icon className="w-6 h-6 text-brand-green" />
                   </div>
-                  <span className="text-[17px] font-bold text-brand-navy">{item.text}</span>
+                  <span className="text-[19px] font-bold text-brand-navy">{item.text}</span>
                 </div>
               ))}
             </div>
@@ -286,7 +286,7 @@ export default function Program1Page() {
                   <div className="w-12 h-12 flex-shrink-0 rounded-full bg-green-50 flex items-center justify-center">
                     <item.icon className="w-6 h-6 text-brand-green" />
                   </div>
-                  <span className="text-[17px] font-bold text-brand-navy">{item.text}</span>
+                  <span className="text-[19px] font-bold text-brand-navy">{item.text}</span>
                 </div>
               ))}
             </div>
@@ -294,7 +294,7 @@ export default function Program1Page() {
         </section>
 
         {/* CURRICULUM SECTION */}
-        <section className="py-16 px-4 bg-gray-50/50">
+        <section className="py-16 px-4 bg-grid-pattern/50">
           <div className="text-center mb-12">
             <h2 className="text-[28px] sm:text-[36px] font-black uppercase text-brand-green">
               PROGRAMME CURRICULUM
@@ -314,7 +314,7 @@ export default function Program1Page() {
                     <span className={`w-6 h-6 rounded-full ${item.bg} ${item.color} flex items-center justify-center text-xs font-bold`}>{i + 1}</span>
                     <h3 className="text-lg font-black uppercase text-brand-navy">{item.title}</h3>
                   </div>
-                  <p className="text-gray-600 font-medium mt-1 pl-8 text-[15px]">
+                  <p className="text-gray-600 font-medium mt-1 pl-8 text-[19px]">
                     {item.text}
                   </p>
                 </div>
@@ -324,7 +324,7 @@ export default function Program1Page() {
         </section>
 
         {/* LEARNING FORMAT */}
-        <section className="py-16 px-4 bg-white">
+        <section className="py-16 px-4 bg-white-pattern">
           <h2 className="text-center text-[28px] sm:text-[36px] font-black uppercase text-brand-green mb-12">
             LEARNING FORMAT
           </h2>
@@ -336,7 +336,7 @@ export default function Program1Page() {
                 </div>
                 <div>
                   <div className="text-[12px] font-black text-green-600 uppercase tracking-wider">DURATION</div>
-                  <div className="font-bold text-brand-navy text-[17px]">12 Weeks</div>
+                  <div className="font-bold text-brand-navy text-[19px]">12 Weeks</div>
                 </div>
               </div>
               <div className="border border-blue-200 rounded-[20px] p-5 flex items-center gap-4 bg-blue-50/30">
@@ -345,7 +345,7 @@ export default function Program1Page() {
                 </div>
                 <div>
                   <div className="text-[12px] font-black text-blue-600 uppercase tracking-wider">SCHEDULE</div>
-                  <div className="font-bold text-brand-navy text-[17px]">2 Sessions per Week</div>
+                  <div className="font-bold text-brand-navy text-[19px]">2 Sessions per Week</div>
                 </div>
               </div>
             </div>
@@ -355,7 +355,7 @@ export default function Program1Page() {
               </div>
               <div>
                 <div className="text-[12px] font-black text-yellow-600 uppercase tracking-wider">SESSION LENGTH</div>
-                <div className="font-bold text-brand-navy text-[17px]">2 Hours per Session</div>
+                <div className="font-bold text-brand-navy text-[19px]">2 Hours per Session</div>
               </div>
             </div>
             <div className="border border-purple-200 rounded-[20px] p-5 flex items-center gap-4 bg-purple-50/30">
@@ -364,8 +364,8 @@ export default function Program1Page() {
               </div>
               <div>
                 <div className="text-[12px] font-black text-purple-600 uppercase tracking-wider">MODE</div>
-                <div className="font-bold text-brand-navy text-[17px]">Live Online + Recorded Sessions</div>
-                <div className="text-gray-500 text-[14px] font-medium mt-0.5">Do your tasks at your pace.</div>
+                <div className="font-bold text-brand-navy text-[19px]">Live Online + Recorded Sessions</div>
+                <div className="text-gray-500 text-[20px] font-medium mt-0.5">Do your tasks at your pace.</div>
               </div>
             </div>
             <div className="border border-teal-200 rounded-[20px] p-5 flex items-center gap-4 bg-teal-50/30">
@@ -374,15 +374,15 @@ export default function Program1Page() {
               </div>
               <div>
                 <div className="text-[12px] font-black text-teal-600 uppercase tracking-wider">LEARNING STYLE</div>
-                <div className="font-bold text-brand-navy text-[17px]">Interactive Workshops & Activities</div>
-                <div className="text-gray-500 text-[14px] font-medium mt-0.5">Learn by doing, not just listening.</div>
+                <div className="font-bold text-brand-navy text-[19px]">Interactive Workshops & Activities</div>
+                <div className="text-gray-500 text-[20px] font-medium mt-0.5">Learn by doing, not just listening.</div>
               </div>
             </div>
           </div>
         </section>
 
         {/* INVESTMENT */}
-        <section className="py-16 px-4 bg-gray-50/50">
+        <section className="py-16 px-4 bg-grid-pattern/50">
           <div className="text-center mb-12">
             <h2 className="text-[28px] sm:text-[36px] font-black uppercase text-brand-navy">
               INVESTMENT
@@ -393,11 +393,11 @@ export default function Program1Page() {
             <div className="bg-white rounded-[24px] border border-gray-200 p-8 shadow-sm relative overflow-hidden flex flex-col h-full">
               <div className="flex justify-between items-start mb-6">
                 <div>
-                  <div className="text-[13px] font-black text-brand-green uppercase bg-green-50 px-3 py-1 rounded-full inline-block mb-3">
+                  <div className="text-[19px] font-black text-brand-green uppercase bg-green-50 px-3 py-1 rounded-full inline-block mb-3">
                     PAY IN FULL
                   </div>
                   <div className="text-[42px] font-black text-brand-navy leading-none">£300</div>
-                  <div className="text-gray-400 font-semibold text-sm mt-1">+ VAT</div>
+                  <div className="text-gray-400 font-semibold text-base mt-1">+ VAT</div>
                 </div>
                 <div className="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center border-4 border-white shadow-sm">
                   <CheckCircle2 className="w-8 h-8 text-brand-green" />
@@ -406,15 +406,15 @@ export default function Program1Page() {
               <div className="space-y-4 mb-8 flex-1">
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-brand-green mt-0.5" />
-                  <span className="text-gray-700 font-medium text-[15px]">Pay once and get access</span>
+                  <span className="text-gray-700 font-medium text-[19px]">Pay once and get access</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-brand-green mt-0.5" />
-                  <span className="text-gray-700 font-medium text-[15px]">All features included</span>
+                  <span className="text-gray-700 font-medium text-[19px]">All features included</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-brand-green mt-0.5" />
-                  <span className="text-gray-700 font-medium text-[15px]">Save £100 by paying in full</span>
+                  <span className="text-gray-700 font-medium text-[19px]">Save £100 by paying in full</span>
                 </div>
               </div>
               <Link
@@ -429,11 +429,11 @@ export default function Program1Page() {
             <div className="bg-white rounded-[24px] border border-gray-200 p-8 shadow-sm relative overflow-hidden flex flex-col h-full">
               <div className="flex justify-between items-start mb-6">
                 <div>
-                  <div className="text-[13px] font-black text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded-full inline-block mb-3">
+                  <div className="text-[19px] font-black text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded-full inline-block mb-3">
                     PAY IN 3 INSTALMENTS
                   </div>
                   <div className="text-[42px] font-black text-brand-navy leading-none">£100 <span className="text-xl">/ m</span></div>
-                  <div className="text-gray-400 font-semibold text-sm mt-1">+ VAT for 3 months</div>
+                  <div className="text-gray-400 font-semibold text-base mt-1">+ VAT for 3 months</div>
                 </div>
                 <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center border-4 border-white shadow-sm">
                   <CalendarDays className="w-8 h-8 text-blue-600" />
@@ -442,15 +442,15 @@ export default function Program1Page() {
               <div className="space-y-4 mb-8 flex-1">
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-blue-600 mt-0.5" />
-                  <span className="text-gray-700 font-medium text-[15px]">Pay over 3 months</span>
+                  <span className="text-gray-700 font-medium text-[19px]">Pay over 3 months</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-blue-600 mt-0.5" />
-                  <span className="text-gray-700 font-medium text-[15px]">All features included</span>
+                  <span className="text-gray-700 font-medium text-[19px]">All features included</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-blue-600 mt-0.5" />
-                  <span className="text-gray-700 font-medium text-[15px]">Automated payments</span>
+                  <span className="text-gray-700 font-medium text-[19px]">Automated payments</span>
                 </div>
               </div>
               <Link
@@ -465,7 +465,7 @@ export default function Program1Page() {
         </section>
 
         {/* WHATS INCLUDED */}
-        <section className="py-16 px-4 bg-white">
+        <section className="py-16 px-4 bg-white-pattern">
           <div className="text-center mb-12">
             <h2 className="text-[28px] sm:text-[36px] font-black uppercase text-brand-green">
               WHAT'S INCLUDED?
@@ -480,8 +480,8 @@ export default function Program1Page() {
                     <item.icon className={`w-6 h-6 ${item.color}`} />
                   </div>
                   <div>
-                    <h3 className="font-black text-brand-navy text-[15px]">{item.title}</h3>
-                    <p className="text-gray-500 text-[13px] font-medium leading-tight mt-1">{item.text}</p>
+                    <h3 className="font-black text-brand-navy text-[19px]">{item.title}</h3>
+                    <p className="text-gray-500 text-[19px] font-medium leading-tight mt-1">{item.text}</p>
                   </div>
                 </div>
               ))}
@@ -493,8 +493,8 @@ export default function Program1Page() {
                     <item.icon className={`w-6 h-6 ${item.color}`} />
                   </div>
                   <div>
-                    <h3 className="font-black text-brand-navy text-[15px]">{item.title}</h3>
-                    <p className="text-gray-500 text-[13px] font-medium leading-tight mt-1">{item.text}</p>
+                    <h3 className="font-black text-brand-navy text-[19px]">{item.title}</h3>
+                    <p className="text-gray-500 text-[19px] font-medium leading-tight mt-1">{item.text}</p>
                   </div>
                 </div>
               ))}
@@ -503,7 +503,7 @@ export default function Program1Page() {
         </section>
 
         {/* WHY LEARN FROM US */}
-        <section className="py-16 px-4 bg-gray-50/50">
+        <section className="py-16 px-4 bg-grid-pattern/50">
           <div className="text-center mb-12">
             <h2 className="text-[28px] sm:text-[36px] font-black uppercase text-brand-navy">
               WHY LEARN <span className="text-brand-green">FROM US?</span>
@@ -517,7 +517,7 @@ export default function Program1Page() {
                   <div className="w-14 h-14 rounded-full bg-green-50/80 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-green transition-colors duration-300">
                     <item.icon className="w-7 h-7 text-brand-green group-hover:text-white transition-colors duration-300 stroke-[1.5]" />
                   </div>
-                  <span className="text-brand-navy font-black text-[15px] md:text-[16px] leading-snug">{item.text}</span>
+                  <span className="text-brand-navy font-black text-[19px] md:text-[20px] leading-snug">{item.text}</span>
                 </div>
               ))}
             </div>
@@ -527,7 +527,7 @@ export default function Program1Page() {
                   <div className="w-14 h-14 rounded-full bg-green-50/80 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-green transition-colors duration-300">
                     <item.icon className="w-7 h-7 text-brand-green group-hover:text-white transition-colors duration-300 stroke-[1.5]" />
                   </div>
-                  <span className="text-brand-navy font-black text-[15px] md:text-[16px] leading-snug">{item.text}</span>
+                  <span className="text-brand-navy font-black text-[19px] md:text-[20px] leading-snug">{item.text}</span>
                 </div>
               ))}
             </div>
@@ -545,9 +545,9 @@ export default function Program1Page() {
               </div>
               <div className="bg-white border border-green-200 rounded-full px-5 py-2.5 flex items-center gap-2 mb-4 shadow-sm z-10">
                 <Target className="w-5 h-5 text-brand-green stroke-[2.5]" />
-                <span className="font-black text-brand-navy text-[14px] uppercase tracking-wide">OUR GOAL IS YOUR SUCCESS</span>
+                <span className="font-black text-brand-navy text-[20px] uppercase tracking-wide">OUR GOAL IS YOUR SUCCESS</span>
               </div>
-              <div className="flex items-center gap-2 text-[13px] font-black text-gray-500 uppercase tracking-widest z-10">
+              <div className="flex items-center gap-2 text-[19px] font-black text-gray-500 uppercase tracking-widest z-10">
                 <CheckCircle2 className="w-4 h-4 text-brand-green" />
                 LEARN. IMPLEMENT. GROW. SUCCEED.
               </div>
@@ -573,10 +573,10 @@ export default function Program1Page() {
                 Your entrepreneurial<br />
                 <span className="text-brand-green">journey starts today.</span>
               </h2>
-              <p className="text-white/80 font-medium text-[16px] mt-4 mb-2">
+              <p className="text-white/80 font-medium text-[20px] mt-4 mb-2">
                 Enroll today to turn your business idea into reality.
               </p>
-              <p className="text-white font-bold text-[18px] mb-8">
+              <p className="text-white font-bold text-[20px] mb-8">
                 Ready to launch? <span className="text-brand-green">Join us.</span>
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

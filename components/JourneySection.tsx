@@ -14,7 +14,7 @@ export default function JourneySection() {
               <div className={`icon-ring ${index === journeySteps.length - 1 ? "bg-brand-navy text-white" : ""}`}>
                 <Icon size={34} className={index === 0 ? "text-brand-green" : ""} strokeWidth={1.9} />
               </div>
-              <p className="mt-3 text-[14px] font-black text-brand-navy">{label}</p>
+              <p className="mt-3 text-[20px] font-black text-brand-navy">{label}</p>
             </div>
             {index < journeySteps.length - 1 && (
               <ArrowRight className="hidden shrink-0 text-brand-navy lg:block" size={36} strokeWidth={2} />

@@ -26,7 +26,7 @@ export default function CTASection() {
             <h2 className="text-[28px] font-black leading-tight md:text-[32px]">
               YOUR ENTREPRENEURIAL JOURNEY <span className="text-brand-bright">STARTS TODAY</span>
             </h2>
-            <p className="mt-2 text-[17px] font-semibold text-white/90">
+            <p className="mt-2 text-[19px] font-semibold text-white/90">
               Stop waiting for the perfect time. Start building the future you want.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">

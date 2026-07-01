@@ -24,7 +24,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-green-50 via-white to-white opacity-70"></div>
           <div className="max-w-[1200px] mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center gap-16">
             <div className="flex-1 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-soft text-brand-green font-bold text-sm mb-6 border border-brand-green/20">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-soft text-brand-green font-bold text-base mb-6 border border-brand-green/20">
                 <Target size={16} />
                 <span>ABOUT PURE STARTUP ACADEMY</span>
               </div>
@@ -34,18 +34,18 @@ export default function AboutPage() {
               <h2 className="text-xl sm:text-2xl font-bold text-gray-700 mb-6 uppercase tracking-wide">
                 From Idea to First Customer
               </h2>
-              <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
+              <p className="text-xl md:text-[22px] text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
                 Pure Startup Academy is a practical entrepreneurship education platform designed to help students, graduates, aspiring entrepreneurs, working professionals, side hustlers, and future founders understand business, avoid costly mistakes, validate ideas, and take confident steps towards launching and growing a business.
               </p>
 
               <div className="bg-gray-50 border border-gray-100 rounded-2xl p-6 text-left mb-10 shadow-sm max-w-2xl mx-auto lg:mx-0">
-                <p className="font-black text-brand-navy mb-4 text-sm uppercase tracking-wide">The academy exists for people who have ever thought:</p>
-                <ul className="space-y-3">
-                  <li className="flex gap-3 text-gray-700 font-medium"><CheckCircle2 className="w-5 h-5 text-brand-green flex-shrink-0" /> I want to start a business but I don't know where to begin.</li>
-                  <li className="flex gap-3 text-gray-700 font-medium"><CheckCircle2 className="w-5 h-5 text-brand-green flex-shrink-0" /> I have an idea but I'm not sure if it will work.</li>
-                  <li className="flex gap-3 text-gray-700 font-medium"><CheckCircle2 className="w-5 h-5 text-brand-green flex-shrink-0" /> I want more freedom, income, purpose, and growth.</li>
-                  <li className="flex gap-3 text-gray-700 font-medium"><CheckCircle2 className="w-5 h-5 text-brand-green flex-shrink-0" /> I want to build something meaningful.</li>
-                  <li className="flex gap-3 text-gray-700 font-medium"><CheckCircle2 className="w-5 h-5 text-brand-green flex-shrink-0" /> I need practical guidance before investing time and money.</li>
+                <p className="font-black text-brand-navy mb-5 text-lg uppercase tracking-wide">The academy exists for people who have ever thought:</p>
+                <ul className="space-y-4">
+                  <li className="flex gap-3 text-gray-700 font-bold text-[19px]"><CheckCircle2 className="w-6 h-6 text-brand-green flex-shrink-0" /> I want to start a business but I don't know where to begin.</li>
+                  <li className="flex gap-3 text-gray-700 font-bold text-[19px]"><CheckCircle2 className="w-6 h-6 text-brand-green flex-shrink-0" /> I have an idea but I'm not sure if it will work.</li>
+                  <li className="flex gap-3 text-gray-700 font-bold text-[19px]"><CheckCircle2 className="w-6 h-6 text-brand-green flex-shrink-0" /> I want more freedom, income, purpose, and growth.</li>
+                  <li className="flex gap-3 text-gray-700 font-bold text-[19px]"><CheckCircle2 className="w-6 h-6 text-brand-green flex-shrink-0" /> I want to build something meaningful.</li>
+                  <li className="flex gap-3 text-gray-700 font-bold text-[19px]"><CheckCircle2 className="w-6 h-6 text-brand-green flex-shrink-0" /> I need practical guidance before investing time and money.</li>
                 </ul>
               </div>
 
@@ -97,7 +97,7 @@ export default function AboutPage() {
                   <div className="bg-green-50/80 w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0 border border-green-100 group-hover:bg-brand-green transition-colors duration-300">
                     <item.icon className="w-7 h-7 text-brand-green stroke-[1.5] group-hover:text-white transition-colors duration-300" />
                   </div>
-                  <h3 className="font-black text-brand-navy text-[17px] leading-snug">{item.title}</h3>
+                  <h3 className="font-black text-brand-navy text-[19px] leading-snug">{item.title}</h3>
                 </div>
               ))}
             </div>
@@ -113,11 +113,11 @@ export default function AboutPage() {
                   <AlertTriangle className="w-8 h-8 text-brand-navy" />
                   <h2 className="text-3xl md:text-4xl font-black text-brand-navy uppercase">The Problem We Solve</h2>
                 </div>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed font-medium">
+                <p className="text-xl md:text-[22px] text-gray-600 mb-8 leading-relaxed font-medium">
                   Many people want to start businesses but lack knowledge, guidance, confidence, and a clear roadmap. Some start by focusing on logos, websites, business cards, or social media pages before understanding customers, market demand, cash flow, sales, systems, and validation.
                 </p>
                 <div className="bg-green-50 border border-brand-green/20 p-6 rounded-2xl border-l-4 border-l-brand-green shadow-sm">
-                  <p className="font-black text-brand-green text-sm uppercase tracking-wider mb-2">Our Solution</p>
+                  <p className="font-black text-brand-green text-base uppercase tracking-wider mb-2">Our Solution</p>
                   <p className="text-brand-navy font-bold leading-relaxed">Pure Startup Academy helps future founders avoid common startup mistakes by learning the right steps before investing heavily.</p>
                 </div>
               </div>
@@ -133,7 +133,7 @@ export default function AboutPage() {
                   <div key={i} className="bg-gray-50 border border-gray-100 p-8 rounded-[24px] hover:bg-white hover:shadow-xl transition-all duration-300">
                     <item.icon className="w-10 h-10 text-brand-navy mb-5 opacity-70 stroke-[1.5]" />
                     <h3 className="text-xl md:text-[22px] font-black text-brand-navy mb-3 uppercase leading-tight">{item.title}</h3>
-                    <p className="text-gray-700 text-base md:text-[17px] leading-relaxed font-bold">{item.desc}</p>
+                    <p className="text-gray-700 text-base md:text-[19px] leading-relaxed font-bold">{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -158,13 +158,13 @@ export default function AboutPage() {
               <ul className="grid grid-cols-2 gap-y-4 gap-x-2 mb-10">
                 {["Start smarter", "Avoid costly mistakes", "Build confidence", "Take action", "Validate business ideas", "Create practical business plans", "Find their first customers", "Build sustainable businesses"].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-gray-200">
-                    <Check className="w-5 h-5 text-brand-green flex-shrink-0" /> <span className="text-[13px] font-bold uppercase tracking-wide leading-tight mt-0.5">{item}</span>
+                    <Check className="w-5 h-5 text-brand-green flex-shrink-0" /> <span className="text-[19px] font-bold uppercase tracking-wide leading-tight mt-0.5">{item}</span>
                   </li>
                 ))}
               </ul>
               <div className="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm shadow-xl mt-auto relative overflow-hidden group">
                 <div className="absolute top-0 left-0 w-1 h-full bg-brand-green"></div>
-                <p className="font-bold text-white text-[17px] leading-relaxed relative z-10">
+                <p className="font-bold text-white text-[19px] leading-relaxed relative z-10">
                   "Helping aspiring entrepreneurs understand entrepreneurship, validate ideas, build confidence, and move from idea to first customer with practical guidance."
                 </p>
                 <div className="absolute -right-6 -bottom-6 opacity-10 transform rotate-12 group-hover:rotate-0 transition duration-500">
@@ -195,7 +195,7 @@ export default function AboutPage() {
                     <div className="w-10 h-10 rounded-full bg-brand-green/20 flex items-center justify-center flex-shrink-0 border border-brand-green/30">
                       <span className="text-brand-green font-black">{i+1}</span>
                     </div>
-                    <span className="font-bold uppercase tracking-wide text-[13px]">{item}</span>
+                    <span className="font-bold uppercase tracking-wide text-[19px]">{item}</span>
                   </div>
                 ))}
               </div>
@@ -223,8 +223,8 @@ export default function AboutPage() {
                   <div className="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-green transition-colors border border-green-100 group-hover:border-transparent">
                     <item.icon className="w-7 h-7 text-brand-green group-hover:text-white transition-colors stroke-[1.5]" />
                   </div>
-                  <h3 className="text-[17px] font-black text-brand-navy mb-4 uppercase leading-snug">{item.title}</h3>
-                  <p className="text-gray-600 leading-relaxed text-[14px] font-medium">{item.desc}</p>
+                  <h3 className="text-[19px] font-black text-brand-navy mb-4 uppercase leading-snug">{item.title}</h3>
+                  <p className="text-gray-600 leading-relaxed text-[20px] font-medium">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -236,7 +236,7 @@ export default function AboutPage() {
           <div className="max-w-[1200px] mx-auto px-4">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl md:text-4xl font-black text-brand-navy uppercase mb-6">Why Pure Startup Academy Exists</h2>
-              <p className="text-[17px] text-gray-600 leading-relaxed font-medium">
+              <p className="text-[19px] text-gray-600 leading-relaxed font-medium">
                 Starting a business can feel exciting, but keeping it alive requires knowledge, planning, guidance, and consistent action. Many entrepreneurs learn through expensive mistakes, trial and error, stress, and frustration.
                 <br/><br/>
                 Pure Startup Academy was created to provide a practical bridge between education and entrepreneurship. It helps future founders understand what to do, how to do it, and how to move forward with confidence.
@@ -260,7 +260,7 @@ export default function AboutPage() {
                     "No financial planning",
                     "Higher chance of costly mistakes"
                   ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-4 text-gray-600 font-bold uppercase text-[13px] tracking-wide">
+                    <li key={i} className="flex items-center gap-4 text-gray-600 font-bold uppercase text-[19px] tracking-wide">
                       <div className="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0"><span className="w-1.5 h-1.5 rounded-full bg-gray-500"></span></div> {item}
                     </li>
                   ))}
@@ -283,7 +283,7 @@ export default function AboutPage() {
                     "Templates and tools",
                     "Confidence to launch"
                   ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-4 text-white font-bold uppercase text-[13px] tracking-wide">
+                    <li key={i} className="flex items-center gap-4 text-white font-bold uppercase text-[19px] tracking-wide">
                       <CheckCircle2 className="w-6 h-6 text-brand-green flex-shrink-0" /> {item}
                     </li>
                   ))}
@@ -309,7 +309,7 @@ export default function AboutPage() {
               ].map((item, i) => (
                 <div 
                   key={i} 
-                  className="group bg-white border border-gray-100 px-6 py-4 md:px-8 md:py-4 rounded-[20px] shadow-[0_8px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_12px_30px_rgba(47,148,36,0.15)] text-brand-navy font-black uppercase text-[13px] md:text-[14px] tracking-widest flex items-center gap-4 hover:-translate-y-1.5 hover:border-brand-green/30 transition-all duration-300 cursor-default"
+                  className="group bg-white border border-gray-100 px-6 py-4 md:px-8 md:py-4 rounded-[20px] shadow-[0_8px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_12px_30px_rgba(47,148,36,0.15)] text-brand-navy font-black uppercase text-[19px] md:text-[20px] tracking-widest flex items-center gap-4 hover:-translate-y-1.5 hover:border-brand-green/30 transition-all duration-300 cursor-default"
                 >
                   <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-brand-green transition-colors duration-300 flex-shrink-0">
                     <Users className="w-5 h-5 text-brand-green group-hover:text-white stroke-[2.5]" />
@@ -350,7 +350,7 @@ export default function AboutPage() {
                   <div className="w-10 h-10 rounded-full bg-green-50/50 border border-green-100 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-green transition-colors duration-300">
                     <Check className="w-5 h-5 text-brand-green group-hover:text-white stroke-[2.5]" />
                   </div>
-                  <span className="text-[14px] font-black text-brand-navy tracking-wide leading-snug group-hover:text-brand-green transition-colors duration-300">{item}</span>
+                  <span className="text-[20px] font-black text-brand-navy tracking-wide leading-snug group-hover:text-brand-green transition-colors duration-300">{item}</span>
                 </div>
               ))}
             </div>
@@ -372,11 +372,11 @@ export default function AboutPage() {
                 <div className="absolute top-0 left-0 w-full h-2 bg-brand-green"></div>
                 <div className="text-[11px] font-black bg-green-100 text-green-700 px-4 py-1.5 rounded-full inline-block self-start mb-6 uppercase tracking-widest shadow-sm">3 Months / 12 Weeks</div>
                 <h3 className="text-2xl font-black uppercase mb-2 leading-tight">Startup Foundations Programme</h3>
-                <p className="text-brand-green font-black text-[13px] mb-8 uppercase tracking-widest">From Business Idea to Launch-Ready Plan</p>
+                <p className="text-brand-green font-black text-[19px] mb-8 uppercase tracking-widest">From Business Idea to Launch-Ready Plan</p>
                 
                 <div className="mb-6">
                   <h4 className="font-black text-[11px] text-gray-400 uppercase mb-3 tracking-widest">Who it is for</h4>
-                  <ul className="text-[13px] font-bold text-gray-700 space-y-1.5 uppercase">
+                  <ul className="text-[19px] font-bold text-gray-700 space-y-1.5 uppercase">
                     <li>• Students & Graduates</li>
                     <li>• Aspiring Entrepreneurs</li>
                     <li>• Employees considering self-employment</li>
@@ -386,14 +386,14 @@ export default function AboutPage() {
                 
                 <div className="mb-8 flex-1">
                   <h4 className="font-black text-[11px] text-gray-400 uppercase mb-3 tracking-widest">Outcome</h4>
-                  <ul className="text-[14px] font-black space-y-3 uppercase text-brand-navy">
+                  <ul className="text-[20px] font-black space-y-3 uppercase text-brand-navy">
                     <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-brand-green flex-shrink-0" /> Validated business idea</li>
                     <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-brand-green flex-shrink-0" /> Launch roadmap</li>
                     <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-brand-green flex-shrink-0" /> Greater confidence</li>
                   </ul>
                 </div>
 
-                <Link href="/programs/startup-foundations" className="block text-center bg-brand-navy text-white py-4 rounded-full font-black uppercase text-[13px] tracking-widest hover:bg-brand-green transition mt-auto w-full shadow-md">
+                <Link href="/programs/startup-foundations" className="block text-center bg-brand-navy text-white py-4 rounded-full font-black uppercase text-[19px] tracking-widest hover:bg-brand-green transition mt-auto w-full shadow-md">
                   View Programme
                 </Link>
               </div>
@@ -403,11 +403,11 @@ export default function AboutPage() {
                 <div className="absolute top-0 left-0 w-full h-2 bg-blue-500"></div>
                 <div className="text-[11px] font-black bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full inline-block self-start mb-6 uppercase tracking-widest shadow-sm">6 Months</div>
                 <h3 className="text-2xl font-black uppercase mb-2 leading-tight">Startup Launch & Growth Programme</h3>
-                <p className="text-blue-500 font-black text-[13px] mb-8 uppercase tracking-widest">From Launch to Consistent Growth</p>
+                <p className="text-blue-500 font-black text-[19px] mb-8 uppercase tracking-widest">From Launch to Consistent Growth</p>
                 
                 <div className="mb-6">
                   <h4 className="font-black text-[11px] text-gray-400 uppercase mb-3 tracking-widest">Who it is for</h4>
-                  <ul className="text-[13px] font-bold text-gray-700 space-y-1.5 uppercase">
+                  <ul className="text-[19px] font-bold text-gray-700 space-y-1.5 uppercase">
                     <li>• New business owners</li>
                     <li>• Side hustle founders</li>
                     <li>• Recently launched startups</li>
@@ -417,14 +417,14 @@ export default function AboutPage() {
                 
                 <div className="mb-8 flex-1">
                   <h4 className="font-black text-[11px] text-gray-400 uppercase mb-3 tracking-widest">Outcome</h4>
-                  <ul className="text-[14px] font-black space-y-3 uppercase text-brand-navy">
+                  <ul className="text-[20px] font-black space-y-3 uppercase text-brand-navy">
                     <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-blue-500 flex-shrink-0" /> Launch with confidence</li>
                     <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-blue-500 flex-shrink-0" /> Generate customers</li>
                     <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-blue-500 flex-shrink-0" /> Build systems</li>
                   </ul>
                 </div>
 
-                <Link href="/programs/startup-launch-growth" className="block text-center bg-brand-navy text-white py-4 rounded-full font-black uppercase text-[13px] tracking-widest hover:bg-blue-600 transition mt-auto w-full shadow-md">
+                <Link href="/programs/startup-launch-growth" className="block text-center bg-brand-navy text-white py-4 rounded-full font-black uppercase text-[19px] tracking-widest hover:bg-blue-600 transition mt-auto w-full shadow-md">
                   View Programme
                 </Link>
               </div>
@@ -434,11 +434,11 @@ export default function AboutPage() {
                 <div className="absolute top-0 left-0 w-full h-2 bg-purple-500"></div>
                 <div className="text-[11px] font-black bg-purple-100 text-purple-700 px-4 py-1.5 rounded-full inline-block self-start mb-6 uppercase tracking-widest shadow-sm">12 Months</div>
                 <h3 className="text-2xl font-black uppercase mb-2 leading-tight">Entrepreneur Development Programme</h3>
-                <p className="text-purple-600 font-black text-[13px] mb-8 uppercase tracking-widest">From Business Owner to Business Leader</p>
+                <p className="text-purple-600 font-black text-[19px] mb-8 uppercase tracking-widest">From Business Owner to Business Leader</p>
                 
                 <div className="mb-6">
                   <h4 className="font-black text-[11px] text-gray-400 uppercase mb-3 tracking-widest">Who it is for</h4>
-                  <ul className="text-[13px] font-bold text-gray-700 space-y-1.5 uppercase">
+                  <ul className="text-[19px] font-bold text-gray-700 space-y-1.5 uppercase">
                     <li>• Serious entrepreneurs</li>
                     <li>• Startup founders</li>
                     <li>• Future business leaders</li>
@@ -448,14 +448,14 @@ export default function AboutPage() {
                 
                 <div className="mb-8 flex-1">
                   <h4 className="font-black text-[11px] text-gray-400 uppercase mb-3 tracking-widest">Outcome</h4>
-                  <ul className="text-[14px] font-black space-y-3 uppercase text-brand-navy">
+                  <ul className="text-[20px] font-black space-y-3 uppercase text-brand-navy">
                     <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-purple-500 flex-shrink-0" /> Stronger leadership skills</li>
                     <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-purple-500 flex-shrink-0" /> Scalable business framework</li>
                     <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-purple-500 flex-shrink-0" /> Long-term business vision</li>
                   </ul>
                 </div>
 
-                <Link href="/programs/entrepreneur-development" className="block text-center bg-brand-navy text-white py-4 rounded-full font-black uppercase text-[13px] tracking-widest hover:bg-purple-600 transition mt-auto w-full shadow-md">
+                <Link href="/programs/entrepreneur-development" className="block text-center bg-brand-navy text-white py-4 rounded-full font-black uppercase text-[19px] tracking-widest hover:bg-purple-600 transition mt-auto w-full shadow-md">
                   View Programme
                 </Link>
               </div>
@@ -490,8 +490,8 @@ export default function AboutPage() {
                       <item.icon className="w-7 h-7 md:w-8 md:h-8 text-brand-green stroke-[1.5] group-hover:text-white transition-colors duration-300" />
                     </div>
                     <div>
-                      <h4 className="text-[13px] md:text-[14px] font-black text-brand-green uppercase tracking-widest mb-1 md:mb-2">{item.title}</h4>
-                      <p className="font-black text-brand-navy text-[16px] md:text-[18px] leading-snug">{item.desc}</p>
+                      <h4 className="text-[19px] md:text-[20px] font-black text-brand-green uppercase tracking-widest mb-1 md:mb-2">{item.title}</h4>
+                      <p className="font-black text-brand-navy text-[20px] md:text-[20px] leading-snug">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -519,7 +519,7 @@ export default function AboutPage() {
                   "AI Toolkit for Entrepreneurs", "LinkedIn Optimisation Guide", "Public Speaking Resources",
                   "Community and Networking"
                 ].map((item, i) => (
-                  <div key={i} className="group bg-white border border-gray-100 text-brand-navy text-[16px] md:text-[17px] font-black px-8 py-5 rounded-2xl flex items-center gap-4 shadow-[0_4px_15px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_25px_rgba(47,148,36,0.12)] hover:-translate-y-1 hover:border-brand-green/30 hover:bg-green-50/30 transition-all duration-300 cursor-default">
+                  <div key={i} className="group bg-white border border-gray-100 text-brand-navy text-[20px] md:text-[19px] font-black px-8 py-5 rounded-2xl flex items-center gap-4 shadow-[0_4px_15px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_25px_rgba(47,148,36,0.12)] hover:-translate-y-1 hover:border-brand-green/30 hover:bg-green-50/30 transition-all duration-300 cursor-default">
                     <FileText className="w-6 h-6 text-brand-green stroke-[2.5]" /> {item}
                   </div>
                 ))}
@@ -552,7 +552,7 @@ export default function AboutPage() {
                     "No clear launch roadmap",
                     "Focuses mainly on information"
                   ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-4 text-gray-500 font-bold uppercase text-[14px] tracking-wide">
+                    <li key={i} className="flex items-center gap-4 text-gray-500 font-bold uppercase text-[20px] tracking-wide">
                       <div className="w-5 h-5 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0"><span className="w-1.5 h-1.5 rounded-full bg-gray-500"></span></div> {item}
                     </li>
                   ))}
@@ -577,7 +577,7 @@ export default function AboutPage() {
                     "Accountability and guidance",
                     "Finish with a launch-ready action plan"
                   ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-4 text-white font-bold uppercase text-[14px] tracking-wide">
+                    <li key={i} className="flex items-center gap-4 text-white font-bold uppercase text-[20px] tracking-wide">
                       <CheckCircle2 className="w-6 h-6 text-brand-green flex-shrink-0" /> {item}
                     </li>
                   ))}
@@ -609,9 +609,9 @@ export default function AboutPage() {
                     <div className="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center border border-green-100">
                       <item.icon className="w-7 h-7 text-brand-green stroke-[1.5]" />
                     </div>
-                    <h3 className="font-black text-brand-navy text-[18px] uppercase">{item.title}</h3>
+                    <h3 className="font-black text-brand-navy text-[20px] uppercase">{item.title}</h3>
                   </div>
-                  <p className="text-gray-600 text-[15px] leading-relaxed font-medium">{item.desc}</p>
+                  <p className="text-gray-600 text-[19px] leading-relaxed font-medium">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -622,7 +622,7 @@ export default function AboutPage() {
         <section className="py-24 bg-white overflow-hidden border-t border-gray-100">
           <div className="max-w-[1200px] mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-black text-brand-navy uppercase mb-6">Building Confident Entrepreneurs</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-16 font-medium leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-16 font-medium leading-relaxed">
               Pure Startup Academy helps future founders move from confusion to clarity, from idea to validation, from planning to action, and from uncertainty to confidence.
             </p>
             
@@ -631,7 +631,7 @@ export default function AboutPage() {
                 "Idea", "Research", "Validation", "Business Model", "Brand", "Sales", "First Customer", "Launch", "Growth"
               ].map((step, i, arr) => (
                 <div key={i} className="flex items-center gap-3 sm:gap-4">
-                  <div className="bg-brand-navy text-white font-black text-[13px] sm:text-[15px] px-6 py-3 rounded-full uppercase tracking-widest whitespace-nowrap shadow-md hover:bg-brand-green transition-colors cursor-default">
+                  <div className="bg-brand-navy text-white font-black text-[19px] sm:text-[19px] px-6 py-3 rounded-full uppercase tracking-widest whitespace-nowrap shadow-md hover:bg-brand-green transition-colors cursor-default">
                     {step}
                   </div>
                   {i < arr.length - 1 && (

@@ -50,7 +50,7 @@ export default function ProgramsPage() {
                     Choose the path that matches your stage and builds your next move.
                   </h1>
 
-                  <p className="mt-6 max-w-3xl text-[17px] font-semibold leading-8 text-white/84 sm:text-[19px]">
+                  <p className="mt-6 max-w-3xl text-[19px] font-semibold leading-8 text-white/84 sm:text-[19px]">
                     Start with validation, move into real-world growth, and step up into long-term business
                     leadership. Each programme is built around implementation, not just theory.
                   </p>
@@ -73,21 +73,21 @@ export default function ProgramsPage() {
                         <CalendarDays size={20} className="text-white" />
                         <div>
                           <p className="text-[11px] font-extrabold uppercase tracking-[0.16em] text-white/58">Timeline</p>
-                          <p className="mt-1 text-[15px] font-black text-white">3, 6 and 12 month pathways</p>
+                          <p className="mt-1 text-[19px] font-black text-white">3, 6 and 12 month pathways</p>
                         </div>
                       </div>
                       <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/6 px-4 py-3">
                         <Layers3 size={20} className="text-white" />
                         <div>
                           <p className="text-[11px] font-extrabold uppercase tracking-[0.16em] text-white/58">Structure</p>
-                          <p className="mt-1 text-[15px] font-black text-white">Clear training, tools and action steps</p>
+                          <p className="mt-1 text-[19px] font-black text-white">Clear training, tools and action steps</p>
                         </div>
                       </div>
                       <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/6 px-4 py-3">
                         <Sparkles size={20} className="text-white" />
                         <div>
                           <p className="text-[11px] font-extrabold uppercase tracking-[0.16em] text-white/58">Outcome</p>
-                          <p className="mt-1 text-[15px] font-black text-white">Progress you can use immediately</p>
+                          <p className="mt-1 text-[19px] font-black text-white">Progress you can use immediately</p>
                         </div>
                       </div>
                     </div>
@@ -129,22 +129,22 @@ export default function ProgramsPage() {
                     >
                       {program.label}
                     </span>
-                    <span className="text-sm font-extrabold text-slate-500">{program.duration}</span>
+                    <span className="text-base font-extrabold text-slate-500">{program.duration}</span>
                   </div>
 
                   <h2 className="mt-5 text-[28px] font-black uppercase leading-[1.02] text-brand-navy">
                     {program.title}
                   </h2>
-                  <p className="mt-3 text-[15px] font-extrabold uppercase tracking-[0.04em] text-slate-500">
+                  <p className="mt-3 text-[19px] font-extrabold uppercase tracking-[0.04em] text-slate-500">
                     {program.strapline}
                   </p>
-                  <p className="mt-5 text-[15px] font-semibold leading-8 text-brand-ink">{program.summary}</p>
+                  <p className="mt-5 text-[19px] font-semibold leading-8 text-brand-ink">{program.summary}</p>
 
                   <div className="mt-6 grid gap-3 sm:grid-cols-3 xl:grid-cols-1">
                     {program.transformation.map((step, index) => (
                       <div
                         key={step}
-                        className="rounded-2xl border border-slate-200 px-4 py-4 text-sm font-extrabold uppercase tracking-[0.08em] text-brand-navy"
+                        className="rounded-2xl border border-slate-200 px-4 py-4 text-base font-extrabold uppercase tracking-[0.08em] text-brand-navy"
                       >
                         <span className="block text-[11px] text-slate-400">Stage {index + 1}</span>
                         <span className="mt-2 block">{step}</span>
@@ -174,13 +174,13 @@ export default function ProgramsPage() {
                       <p className="text-[11px] font-extrabold uppercase tracking-[0.14em] text-slate-400">
                         Installment
                       </p>
-                      <p className="mt-2 text-[17px] font-black text-brand-navy">{program.investment.installment}</p>
+                      <p className="mt-2 text-[19px] font-black text-brand-navy">{program.investment.installment}</p>
                     </div>
                   </div>
 
                   <Link
                     href={`/programs/${program.slug}`}
-                    className="mt-7 inline-flex items-center gap-2 rounded-full bg-brand-navy px-5 py-3 text-sm font-extrabold uppercase tracking-[0.08em] text-white transition hover:translate-y-[-1px]"
+                    className="mt-7 inline-flex items-center gap-2 rounded-full bg-brand-navy px-5 py-3 text-base font-extrabold uppercase tracking-[0.08em] text-white transition hover:translate-y-[-1px]"
                   >
                     View Full Programme <ArrowRight size={16} />
                   </Link>
@@ -188,7 +188,7 @@ export default function ProgramsPage() {
                     href={program.checkoutUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 inline-flex items-center gap-2 text-sm font-extrabold uppercase tracking-[0.08em]"
+                    className="mt-3 inline-flex items-center gap-2 text-base font-extrabold uppercase tracking-[0.08em]"
                     style={{ color: program.theme.accent }}
                   >
                     Secure Checkout <ArrowRight size={16} />
@@ -211,22 +211,22 @@ export default function ProgramsPage() {
               </h2>
               <div className="mt-6 space-y-4">
                 <div className="rounded-2xl bg-brand-soft px-5 py-4">
-                  <p className="text-sm font-extrabold uppercase tracking-[0.1em] text-brand-green">Start here</p>
-                  <p className="mt-2 text-[15px] font-semibold leading-7 text-brand-ink">
+                  <p className="text-base font-extrabold uppercase tracking-[0.1em] text-brand-green">Start here</p>
+                  <p className="mt-2 text-[19px] font-semibold leading-7 text-brand-ink">
                     Choose <strong>Startup Foundations</strong> if you need clarity, validation, and a proper
                     launch plan.
                   </p>
                 </div>
                 <div className="rounded-2xl bg-[#fff5eb] px-5 py-4">
-                  <p className="text-sm font-extrabold uppercase tracking-[0.1em] text-[#ff8b2b]">Build traction</p>
-                  <p className="mt-2 text-[15px] font-semibold leading-7 text-brand-ink">
+                  <p className="text-base font-extrabold uppercase tracking-[0.1em] text-[#ff8b2b]">Build traction</p>
+                  <p className="mt-2 text-[19px] font-semibold leading-7 text-brand-ink">
                     Choose <strong>Startup Launch & Growth</strong> if you already have momentum and now need
                     customers, systems, and consistent growth.
                   </p>
                 </div>
                 <div className="rounded-2xl bg-[#eaf8f8] px-5 py-4">
-                  <p className="text-sm font-extrabold uppercase tracking-[0.1em] text-[#0f8b8d]">Lead long term</p>
-                  <p className="mt-2 text-[15px] font-semibold leading-7 text-brand-ink">
+                  <p className="text-base font-extrabold uppercase tracking-[0.1em] text-[#0f8b8d]">Lead long term</p>
+                  <p className="mt-2 text-[19px] font-semibold leading-7 text-brand-ink">
                     Choose <strong>Entrepreneur Development</strong> if you want to scale sustainably and grow as a
                     business leader.
                   </p>
@@ -239,7 +239,7 @@ export default function ProgramsPage() {
                 <div className="rounded-2xl border border-slate-200 p-5">
                   <CalendarDays className="text-brand-green" size={24} />
                   <p className="mt-4 text-[12px] font-extrabold uppercase tracking-[0.16em] text-slate-400">Timeline</p>
-                  <p className="mt-2 text-[15px] font-bold leading-7 text-brand-ink">
+                  <p className="mt-2 text-[19px] font-bold leading-7 text-brand-ink">
                     3 months to validate and prepare.
                     6 months to build traction.
                     12 months to develop leadership and scale.
@@ -248,14 +248,14 @@ export default function ProgramsPage() {
                 <div className="rounded-2xl border border-slate-200 p-5">
                   <Layers3 className="text-brand-green" size={24} />
                   <p className="mt-4 text-[12px] font-extrabold uppercase tracking-[0.16em] text-slate-400">Delivery</p>
-                  <p className="mt-2 text-[15px] font-bold leading-7 text-brand-ink">
+                  <p className="mt-2 text-[19px] font-bold leading-7 text-brand-ink">
                     Each programme combines live training, practical tools, real business examples, and clear action steps.
                   </p>
                 </div>
                 <div className="rounded-2xl border border-slate-200 p-5">
                   <Sparkles className="text-brand-green" size={24} />
                   <p className="mt-4 text-[12px] font-extrabold uppercase tracking-[0.16em] text-slate-400">Outcome</p>
-                  <p className="mt-2 text-[15px] font-bold leading-7 text-brand-ink">
+                  <p className="mt-2 text-[19px] font-bold leading-7 text-brand-ink">
                     The goal is progress you can use immediately, not notes that sit untouched after the session ends.
                   </p>
                 </div>

@@ -12,7 +12,7 @@ export default function HeroSection() {
           <p className="mt-5 text-[22px] font-extrabold leading-snug text-brand-navy">
             Turn Your Business Idea into a Launch-Ready Business
           </p>
-          <p className="mt-7 max-w-[610px] text-[18px] font-semibold leading-9 text-brand-ink">
+          <p className="mt-7 max-w-[610px] text-[20px] font-semibold leading-9 text-brand-ink">
             Designed for aspiring entrepreneurs who want to go from idea to first customer with expert guidance and real-world experience.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">

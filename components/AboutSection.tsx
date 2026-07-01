@@ -22,7 +22,7 @@ export default function AboutSection() {
             <h2 className="mt-5 text-[30px] font-black uppercase leading-none sm:text-[38px]">
               Helping Future Founders Start Smart
             </h2>
-            <p className="mt-5 max-w-xl text-[16px] font-semibold leading-8 text-white/86">
+            <p className="mt-5 max-w-xl text-[20px] font-semibold leading-8 text-white/86">
               Pure Startup Academy was created to help aspiring entrepreneurs gain practical knowledge,
               guidance and confidence before taking the leap into business.
             </p>
@@ -34,7 +34,7 @@ export default function AboutSection() {
                   className="flex items-center gap-3 rounded-2xl border border-white/12 bg-white/8 px-4 py-4"
                 >
                   <TimerReset className="shrink-0 text-brand-bright" size={20} strokeWidth={2.2} />
-                  <span className="text-sm font-extrabold uppercase tracking-[0.08em] text-white">{item}</span>
+                  <span className="text-base font-extrabold uppercase tracking-[0.08em] text-white">{item}</span>
                 </div>
               ))}
             </div>
@@ -52,13 +52,13 @@ export default function AboutSection() {
                 <div className="mt-5 flex items-start gap-4 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5">
                   <UserRound className="mt-1 shrink-0 text-brand-green" size={24} strokeWidth={1.9} />
                   <div>
-                    <p className="text-[17px] font-black text-brand-navy">Umer Sabah Aslam</p>
-                    <p className="mt-1 text-[14px] font-bold leading-7 text-brand-ink">
+                    <p className="text-[19px] font-black text-brand-navy">Umer Sabah Aslam</p>
+                    <p className="mt-1 text-[20px] font-bold leading-7 text-brand-ink">
                       Founder of Pure Catering Supplies Ltd and Pure Care Medical Supplies Ltd.
                     </p>
                   </div>
                 </div>
-                <p className="mt-5 text-[15px] font-semibold leading-8 text-brand-ink">
+                <p className="mt-5 text-[19px] font-semibold leading-8 text-brand-ink">
                   The academy is designed for students, aspiring entrepreneurs, working professionals and
                   future founders who want expert direction before investing their time, energy and money.
                 </p>
@@ -75,7 +75,7 @@ export default function AboutSection() {
                     return (
                       <div key={item} className="flex gap-4 rounded-2xl border border-slate-200 px-5 py-4">
                         <Icon className="mt-1 shrink-0 text-brand-green" size={22} strokeWidth={1.9} />
-                        <p className="text-[14px] font-bold leading-7 text-brand-ink">{item}</p>
+                        <p className="text-[20px] font-bold leading-7 text-brand-ink">{item}</p>
                       </div>
                     );
                   })}
@@ -87,7 +87,7 @@ export default function AboutSection() {
               <p className="text-[12px] font-extrabold uppercase tracking-[0.18em] text-brand-green">
                 Core Message
               </p>
-              <p className="mt-3 text-[18px] font-black leading-8 text-brand-navy">
+              <p className="mt-3 text-[20px] font-black leading-8 text-brand-navy">
                 Success is not about having more information. It is about having the right information and
                 taking action.
               </p>

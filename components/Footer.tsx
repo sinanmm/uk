@@ -26,10 +26,10 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="text-[18px] font-semibold uppercase text-white/90">QUICK LINKS</p>
+          <p className="text-[20px] font-semibold uppercase text-white/90">QUICK LINKS</p>
           <div className="mt-4 space-y-2">
             {quickLinks.map((item) => (
-              <Link key={item.label} href={item.href} className="block text-[15px] text-white/78 transition hover:text-white">
+              <Link key={item.label} href={item.href} className="block text-[19px] text-white/78 transition hover:text-white">
                 {item.label}
               </Link>
             ))}
@@ -37,10 +37,10 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="text-[18px] font-semibold uppercase text-white/90">PROGRAMMES</p>
+          <p className="text-[20px] font-semibold uppercase text-white/90">PROGRAMMES</p>
           <div className="mt-4 space-y-2">
             {programmeLinks.map((item) => (
-              <Link key={item.label} href={item.href} className="block text-[15px] text-white/78 transition hover:text-white">
+              <Link key={item.label} href={item.href} className="block text-[19px] text-white/78 transition hover:text-white">
                 {item.label}
               </Link>
             ))}
@@ -49,7 +49,7 @@ export default function Footer() {
 
 
         <div>
-          <p className="text-[18px] font-semibold uppercase text-white/90">FOLLOW US</p>
+          <p className="text-[20px] font-semibold uppercase text-white/90">FOLLOW US</p>
           <div className="mt-4 flex gap-3">
             <a
               href="https://www.instagram.com/purestartupacademy?igsh=MXYxam1wdnNpYWRj"
@@ -83,7 +83,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="section-shell border-t border-white/10 py-4 text-center text-[14px] text-white/70">
+      <div className="section-shell border-t border-white/10 py-4 text-center text-[20px] text-white/70">
         &copy; 2026 Pure Startup Academy. All Rights Reserved.
       </div>
     </footer>

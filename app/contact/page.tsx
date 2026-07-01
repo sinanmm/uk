@@ -52,10 +52,17 @@ export default function ContactPage() {
                       <Phone className="w-6 h-6 text-brand-green" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 uppercase text-sm tracking-wide mb-1">Call Us</h3>
-                      <div className="flex flex-col gap-1">
-                        <a href="tel:07407048979" className="text-brand-navy font-bold text-lg hover:text-brand-green transition">07407048979</a>
+                      <h3 className="font-bold text-gray-900 uppercase text-base tracking-wide mb-1">Call Us</h3>
+                      <div className="flex flex-col gap-3">
                         <a href="tel:07776636037" className="text-brand-navy font-bold text-lg hover:text-brand-green transition">07776636037</a>
+                        <div className="flex gap-2">
+                          <a href="tel:07776636037" className="inline-flex items-center gap-1.5 bg-brand-green text-white px-3 py-1.5 rounded-lg text-base font-bold uppercase hover:bg-green-700 transition">
+                            <Phone className="w-4 h-4" /> Call
+                          </a>
+                          <a href="https://wa.me/447776636037" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 bg-[#25D366] text-white px-3 py-1.5 rounded-lg text-base font-bold uppercase hover:bg-[#1ebe5d] transition">
+                            <MessageCircle className="w-4 h-4" /> WhatsApp
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -65,10 +72,14 @@ export default function ContactPage() {
                       <Mail className="w-6 h-6 text-blue-600" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 uppercase text-sm tracking-wide mb-1">Email</h3>
-                      <a href="mailto:sales@purecateringsupplies.co.uk" className="text-brand-navy font-bold text-lg hover:text-blue-600 transition break-all">
-                        sales@purecateringsupplies.co.uk
-                      </a>
+                      <h3 className="font-bold text-gray-900 uppercase text-base tracking-wide mb-1">Email</h3>
+                      <div className="flex flex-col gap-3 mt-1">
+                        <div>
+                          <a href="mailto:info@psacademy.uk" className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-[19px] font-bold uppercase hover:bg-blue-700 transition shadow-sm break-all">
+                            <Mail className="w-5 h-5" /> info@psacademy.uk
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -77,7 +88,7 @@ export default function ContactPage() {
                       <MapPin className="w-6 h-6 text-purple-600" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 uppercase text-sm tracking-wide mb-1">Our Location</h3>
+                      <h3 className="font-bold text-gray-900 uppercase text-base tracking-wide mb-1">Our Location</h3>
                       <p className="text-brand-navy font-bold text-lg">Manchester, UK</p>
                     </div>
                   </div>
@@ -103,23 +114,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Why Businesses Choose Us */}
-              <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
-                <h3 className="text-2xl font-black text-brand-navy uppercase mb-6">Why Businesses Choose Us</h3>
-                <ul className="space-y-4">
-                  {[
-                    "Trusted by 100+ Takeaways",
-                    "Orders delivered in 2 working days",
-                    "Low Minimum Orders",
-                    "Trade Prices"
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-brand-navy font-bold text-lg">
-                      <CheckCircle2 className="w-6 h-6 text-brand-green flex-shrink-0 mt-0.5" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+
             </div>
 
             {/* RIGHT COLUMN - FORM */}
@@ -128,7 +123,7 @@ export default function ContactPage() {
               <h2 className="text-3xl font-black text-brand-navy uppercase mb-2">Send a Message</h2>
               <p className="text-gray-500 font-medium mb-8">Fill out the form below and we'll get back to you shortly.</p>
               
-              <form action="https://formsubmit.co/sales@purecateringsupplies.co.uk" method="POST" className="space-y-6">
+              <form action="https://formsubmit.co/info@psacademy.uk" method="POST" className="space-y-6">
                 {/* Honeypot for spam protection */}
                 <input type="text" name="_honey" style={{ display: "none" }} />
                 {/* Disable Captcha for smoother UX (optional) */}
@@ -139,22 +134,22 @@ export default function ContactPage() {
 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-bold text-brand-navy uppercase tracking-wide">Full Name</label>
+                    <label htmlFor="name" className="text-base font-bold text-brand-navy uppercase tracking-wide">Full Name</label>
                     <input type="text" id="name" name="name" required className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition" placeholder="John Doe" />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-bold text-brand-navy uppercase tracking-wide">Phone Number</label>
+                    <label htmlFor="phone" className="text-base font-bold text-brand-navy uppercase tracking-wide">Phone Number</label>
                     <input type="tel" id="phone" name="phone" required className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition" placeholder="+44 123 456 7890" />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-bold text-brand-navy uppercase tracking-wide">Email Address</label>
+                  <label htmlFor="email" className="text-base font-bold text-brand-navy uppercase tracking-wide">Email Address</label>
                   <input type="email" id="email" name="email" required className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition" placeholder="john@example.com" />
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-bold text-brand-navy uppercase tracking-wide">Your Message</label>
+                  <label htmlFor="message" className="text-base font-bold text-brand-navy uppercase tracking-wide">Your Message</label>
                   <textarea id="message" name="message" required rows={5} className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition resize-none" placeholder="How can we help you?"></textarea>
                 </div>
 

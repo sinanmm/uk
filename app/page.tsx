@@ -160,7 +160,7 @@ export default function Home() {
     <>
       <Navbar />
       <main className="pb-8">
-        <section id="home" className="page-fade overflow-hidden border-b border-slate-200/80 bg-white">
+        <section id="home" className="page-fade overflow-hidden border-b border-slate-200/80 bg-white-pattern">
           <div className="section-shell grid items-center gap-10 pb-10 pt-7 lg:grid-cols-[0.95fr_1.05fr] lg:pb-14 lg:pt-10">
             <div className="relative z-10 py-4">
               <h1 className="text-[56px] font-black uppercase leading-[0.92] tracking-[-0.04em] text-brand-navy sm:text-[78px] lg:text-[90px]">
@@ -174,10 +174,10 @@ export default function Home() {
                 Your Transformation Journey Starts Here.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link href="#programmes" className="btn-primary rounded-[10px] px-6 py-4 text-[16px] normal-case tracking-normal">
+                <Link href="#programmes" className="btn-primary rounded-[10px] px-6 py-4 text-[20px] normal-case tracking-normal">
                   EXPLORE PROGRAMS <ArrowRight size={18} />
                 </Link>
-                <Link href="#webinar" className="btn-secondary rounded-[10px] px-7 py-4 text-[16px] normal-case tracking-normal">
+                <Link href={consultationUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary rounded-[10px] px-7 py-4 text-[20px] normal-case tracking-normal">
                   BOOK A FREE WEBINAR
                 </Link>
               </div>
@@ -211,8 +211,8 @@ export default function Home() {
                     <Icon size={34} className={step.accent} strokeWidth={1.8} />
                   </div>
                   <div>
-                    <p className={`text-[18px] font-black uppercase leading-none ${step.accent}`}>{step.title}</p>
-                    <p className="mt-2 max-w-[130px] text-[17px] leading-tight text-brand-navy">{step.text}</p>
+                    <p className={`text-[20px] font-black uppercase leading-none ${step.accent}`}>{step.title}</p>
+                    <p className="mt-2 max-w-[130px] text-[19px] leading-tight text-brand-navy">{step.text}</p>
                   </div>
                   {index < journeySteps.length - 1 ? <span className="hidden text-[28px] font-black text-brand-navy xl:inline">&gt;</span> : null}
                 </div>
@@ -233,7 +233,7 @@ export default function Home() {
                   className="rounded-[24px] border border-slate-200 bg-white px-7 pb-6 pt-8 shadow-[0_22px_46px_rgba(7,22,66,0.08)]"
                 >
                   <div
-                    className="inline-flex rounded-[10px] px-5 py-2 text-[18px] font-black text-white"
+                    className="inline-flex rounded-[10px] px-5 py-2 text-[20px] font-black text-white"
                     style={{ backgroundColor: programme.accent }}
                   >
                     {programme.number}
@@ -245,23 +245,23 @@ export default function Home() {
                     <Icon size={32} color={programme.accent} strokeWidth={1.8} />
                   </div>
                   <h3 className="mt-7 text-[26px] font-black uppercase leading-tight text-brand-navy">{programme.title}</h3>
-                  <p className="mt-2 text-[18px] font-semibold" style={{ color: programme.accent }}>
+                  <p className="mt-2 text-[20px] font-semibold" style={{ color: programme.accent }}>
                     {programme.duration}
                   </p>
                   <div className="mt-6 space-y-4">
                     {programme.points.map((point) => (
                       <div key={point} className="flex items-start gap-3">
                         <span
-                          className="mt-2 h-3.5 w-3.5 shrink-0 rounded-full"
+                          className="mt-2.5 h-3.5 w-3.5 shrink-0 rounded-full"
                           style={{ backgroundColor: programme.accent }}
                         />
-                        <p className="text-[17px] leading-tight text-brand-navy">{point}</p>
+                        <p className="text-[20px] font-bold leading-tight text-brand-navy">{point}</p>
                       </div>
                     ))}
                   </div>
                   <Link
                     href={programme.href}
-                    className="mt-7 inline-flex w-full items-center justify-center rounded-[10px] border-2 px-5 py-3 text-[16px] font-black uppercase"
+                    className="mt-7 inline-flex w-full items-center justify-center rounded-[10px] border-2 px-5 py-3 text-[20px] font-black uppercase"
                     style={{ borderColor: programme.accent, color: programme.accent }}
                   >
                     LEARN MORE &gt;
@@ -281,7 +281,7 @@ export default function Home() {
               return (
                 <div key={item.label} className="flex flex-col items-center px-5 text-center">
                   <Icon size={34} className="text-brand-green" strokeWidth={1.8} />
-                  <p className="mt-4 text-[18px] font-black leading-tight text-brand-navy">{item.label}</p>
+                  <p className="mt-4 text-[20px] font-black leading-tight text-brand-navy">{item.label}</p>
                 </div>
               );
             })}
@@ -307,9 +307,9 @@ export default function Home() {
                 {painPoints.map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <div className="bg-red-50/80 rounded-full p-1 mt-0.5">
-                      <CircleX size={18} className="shrink-0 text-[#ef534f] stroke-[2.5]" />
+                      <CircleX size={20} className="shrink-0 text-[#ef534f] stroke-[2.5]" />
                     </div>
-                    <p className="text-[16px] font-bold leading-snug text-brand-navy">{item}</p>
+                    <p className="text-[22px] font-black leading-snug text-brand-navy">{item}</p>
                   </div>
                 ))}
               </div>
@@ -332,9 +332,9 @@ export default function Home() {
                 {solutionPoints.map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <div className="bg-green-50/80 rounded-full p-1 mt-0.5">
-                      <CircleCheckBig size={18} className="shrink-0 text-brand-green stroke-[2.5]" />
+                      <CircleCheckBig size={20} className="shrink-0 text-brand-green stroke-[2.5]" />
                     </div>
-                    <p className="text-[16px] font-bold leading-snug text-brand-navy">{item}</p>
+                    <p className="text-[22px] font-black leading-snug text-brand-navy">{item}</p>
                   </div>
                 ))}
               </div>
@@ -357,9 +357,9 @@ export default function Home() {
                 {outputPoints.map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <div className="bg-blue-50/80 rounded-full p-1 mt-0.5">
-                      <CircleCheckBig size={18} className="shrink-0 text-[#2166d1] stroke-[2.5]" />
+                      <CircleCheckBig size={20} className="shrink-0 text-[#2166d1] stroke-[2.5]" />
                     </div>
-                    <p className="text-[16px] font-bold leading-snug text-brand-navy">{item}</p>
+                    <p className="text-[22px] font-black leading-snug text-brand-navy">{item}</p>
                   </div>
                 ))}
               </div>
@@ -376,7 +376,7 @@ export default function Home() {
               return (
                 <div key={item.label} className="flex flex-col items-center px-5 text-center">
                   <Icon size={34} className="text-brand-green" strokeWidth={1.8} />
-                  <p className="mt-4 text-[18px] font-black leading-tight text-brand-navy">{item.label}</p>
+                  <p className="mt-4 text-[20px] font-black leading-tight text-brand-navy">{item.label}</p>
                 </div>
               );
             })}
@@ -387,12 +387,15 @@ export default function Home() {
           <div className="overflow-hidden rounded-[22px] bg-brand-navy text-white shadow-[0_22px_50px_rgba(7,22,66,0.16)]">
             <div className="grid gap-0 lg:grid-cols-[1.15fr_0.55fr_0.8fr]">
               <div className="px-6 py-7 sm:px-8 md:px-10 md:py-9">
-                <div className="inline-flex rounded-[8px] bg-brand-green px-4 py-2 text-[16px] font-black uppercase shadow-[0_0_15px_rgba(47,148,36,0.5)]">LIVE</div>
-                <p className="mt-4 text-[18px] font-semibold text-white/90">
-                  Monthly <span className="text-brand-green font-black">Free Live Webinar</span>
+                <div className="inline-flex rounded-[8px] bg-brand-green px-4 py-2 text-[20px] font-black uppercase shadow-[0_0_15px_rgba(47,148,36,0.5)]">LIVE</div>
+                <p className="mt-5 flex items-center gap-2 flex-wrap text-[20px] font-semibold text-white/90">
+                  Monthly 
+                  <span className="text-[28px] font-black uppercase tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-400 drop-shadow-md">
+                    Free Live Webinar
+                  </span>
                 </p>
                 <h3 className="mt-4 text-[36px] font-black leading-[1.04] sm:text-[44px]">From Idea to First Customer</h3>
-                <p className="mt-4 max-w-[520px] text-[18px] leading-tight text-white/86">
+                <p className="mt-4 max-w-[520px] text-[20px] leading-tight text-white/86">
                   Join our free webinar and take the first step in your entrepreneurial journey.
                 </p>
               </div>
@@ -420,7 +423,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="bg-[#122a5a] px-6 py-7 sm:px-8 md:px-10 md:py-9">
-                <p className="text-[18px] font-semibold text-white/90">During the webinar you&apos;ll learn:</p>
+                <p className="text-[20px] font-semibold text-white/90">During the webinar you&apos;ll learn to:</p>
                 <div className="mt-5 space-y-4">
                   {[
                     "Validate your business idea", 
@@ -429,21 +432,21 @@ export default function Home() {
                   ].map((item) => (
                     <div key={item} className="flex items-center gap-3">
                       <CircleCheckBig size={20} className="shrink-0 text-brand-green" />
-                      <p className="text-[17px] text-white/90">{item}</p>
+                      <p className="text-[19px] text-white/90">{item}</p>
                     </div>
                   ))}
                 </div>
                 <div className="mt-6 rounded-[18px] bg-white p-5 text-center text-brand-navy">
-                  <p className="text-[18px] font-semibold text-brand-green">Next Webinar</p>
+                  <p className="text-[20px] font-semibold text-brand-green">Next Webinar</p>
                   <p className="mt-2 text-[34px] font-black uppercase leading-none">5 JULY 2026</p>
-                  <p className="mt-2 text-[18px] font-semibold uppercase text-slate-500">Sunday</p>
-                  <p className="mt-3 text-[18px] font-black uppercase">02:00 PM UK Time</p>
+                  <p className="mt-2 text-[20px] font-semibold uppercase text-slate-500">Sunday</p>
+                  <p className="mt-3 text-[20px] font-black uppercase">02:00 PM UK Time</p>
                 </div>
                 <Link
                   href={webinarUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary mt-5 w-full rounded-[10px] py-4 text-[17px] font-black uppercase tracking-wide flex justify-center shadow-lg hover:shadow-brand-green/30"
+                  className="btn-primary mt-5 w-full rounded-[10px] py-4 text-[19px] font-black uppercase tracking-wide flex justify-center shadow-lg hover:shadow-brand-green/30"
                 >
                   JOIN THE FREE WEBINAR
                 </Link>

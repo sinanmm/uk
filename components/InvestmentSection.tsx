@@ -23,14 +23,14 @@ function PricingCard({
 }) {
   return (
     <div className="section-card flex min-h-[306px] flex-1 flex-col items-center px-6 py-6 text-center transition duration-200 hover:-translate-y-1 hover:shadow-soft">
-      <p className={`mb-5 rounded-md px-3 py-1 text-[13px] font-black ${blue ? "bg-blue-100 text-blue-700" : "text-brand-green"}`}>
+      <p className={`mb-5 rounded-md px-3 py-1 text-[19px] font-black ${blue ? "bg-blue-100 text-blue-700" : "text-brand-green"}`}>
         {title}
       </p>
       <p className="text-[50px] font-black leading-none text-brand-navy">{price}</p>
-      <p className="mt-2 text-[13px] font-extrabold text-brand-navy">{suffix}</p>
+      <p className="mt-2 text-[19px] font-extrabold text-brand-navy">{suffix}</p>
       <ul className="my-6 w-full space-y-3 text-left">
         {points.map((point) => (
-          <li key={point} className="flex items-start gap-2 text-[13px] font-bold text-brand-ink">
+          <li key={point} className="flex items-start gap-2 text-[19px] font-bold text-brand-ink">
             <Check className="mt-0.5 shrink-0 text-brand-green" size={15} />
             {point}
           </li>
@@ -40,7 +40,7 @@ function PricingCard({
         {blue ? (
           <a
             href={href}
-            className="inline-flex w-full items-center justify-center rounded-md bg-blue-700 px-6 py-3 text-[13px] font-extrabold uppercase text-white shadow-[0_12px_24px_rgba(29,78,216,0.22)] transition hover:scale-[1.03] hover:bg-blue-800"
+            className="inline-flex w-full items-center justify-center rounded-md bg-blue-700 px-6 py-3 text-[19px] font-extrabold uppercase text-white shadow-[0_12px_24px_rgba(29,78,216,0.22)] transition hover:scale-[1.03] hover:bg-blue-800"
           >
             ENROLL NOW
           </a>

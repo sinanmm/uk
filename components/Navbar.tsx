@@ -38,7 +38,7 @@ export default function Navbar() {
             <Link
               key={item}
               href={hrefFor(item)}
-              className="nav-link group relative py-3 text-[17px] font-semibold text-brand-navy transition duration-300 hover:text-brand-navy"
+              className="nav-link group relative py-3 text-[19px] font-semibold text-brand-navy transition duration-300 hover:text-brand-navy"
             >
               {item}
               <span className="absolute inset-x-0 bottom-0 h-[4px] origin-left scale-x-0 rounded-full bg-brand-green transition-transform duration-300 group-hover:scale-x-100" />

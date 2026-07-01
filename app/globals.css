@@ -41,11 +41,11 @@ body {
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[12px] bg-brand-green px-6 py-3 text-[13px] font-extrabold uppercase tracking-normal text-white transition duration-200 hover:bg-[#247d1c] focus:outline-none focus:ring-4 focus:ring-green-200;
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[12px] bg-brand-green px-6 py-3 text-[19px] font-extrabold uppercase tracking-normal text-white transition duration-200 hover:bg-[#247d1c] focus:outline-none focus:ring-4 focus:ring-green-200;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[12px] border-2 border-brand-navy bg-white px-6 py-3 text-[13px] font-extrabold uppercase tracking-normal text-brand-navy transition duration-200 hover:border-brand-green hover:text-brand-green focus:outline-none focus:ring-4 focus:ring-slate-200;
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[12px] border-2 border-brand-navy bg-white px-6 py-3 text-[19px] font-extrabold uppercase tracking-normal text-brand-navy transition duration-200 hover:border-brand-green hover:text-brand-green focus:outline-none focus:ring-4 focus:ring-slate-200;
   }
 
   .icon-ring {
@@ -187,4 +187,111 @@ details[open] .details-chevron {
 
 .nav-link {
   letter-spacing: 0;
+}
+
+
+.bg-white-pattern {
+  background-color: #ffffff;
+  background-image: url('/bg_abstract_waves.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.bg-white-pattern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 0;
+  pointer-events: none;
+}
+.bg-white-pattern > * {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-grid-pattern {
+  background-color: #f8fafc;
+  background-image: url('/bg_grid_gradient.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.bg-grid-pattern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 0;
+  pointer-events: none;
+}
+.bg-grid-pattern > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.bg-prog1-pattern {
+  background-color: #ffffff;
+  background-image: url('/prog1_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.bg-prog1-pattern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 0;
+  pointer-events: none;
+}
+.bg-prog1-pattern > * {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-prog2-pattern {
+  background-color: #ffffff;
+  background-image: url('/prog2_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.bg-prog2-pattern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 0;
+  pointer-events: none;
+}
+.bg-prog2-pattern > * {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-prog3-pattern {
+  background-color: #ffffff;
+  background-image: url('/prog3_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.bg-prog3-pattern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 0;
+  pointer-events: none;
+}
+.bg-prog3-pattern > * {
+  position: relative;
+  z-index: 1;
 }

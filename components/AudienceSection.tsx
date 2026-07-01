@@ -13,7 +13,7 @@ export default function AudienceSection() {
             className="section-card flex min-h-[126px] flex-col items-center justify-center px-3 py-5 text-center transition duration-200 hover:-translate-y-1 hover:border-brand-green hover:shadow-soft"
           >
             <Icon className="mb-3 text-brand-green" size={44} strokeWidth={1.7} />
-            <p className="text-[13px] font-extrabold leading-tight text-brand-ink">{label}</p>
+            <p className="text-[19px] font-extrabold leading-tight text-brand-ink">{label}</p>
           </div>
         ))}
       </div>

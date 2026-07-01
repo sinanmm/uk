@@ -10,7 +10,7 @@ export default function WhyPSASection() {
         {whyPSA.map(({ text, icon: Icon }) => (
           <div key={text} className="flex gap-4">
             <Icon className="mt-0.5 shrink-0 text-brand-green" size={26} strokeWidth={1.6} />
-            <p className="text-[13px] font-bold leading-snug text-brand-ink">{text}</p>
+            <p className="text-[19px] font-bold leading-snug text-brand-ink">{text}</p>
           </div>
         ))}
       </div>

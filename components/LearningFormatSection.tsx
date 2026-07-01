@@ -11,8 +11,8 @@ export default function LearningFormatSection() {
           <div key={label} className="flex gap-4">
             <Icon className="mt-0.5 shrink-0 text-brand-navy" size={24} strokeWidth={1.8} />
             <div>
-              <p className="text-[13px] font-black text-brand-navy">{label}</p>
-              <p className="text-[13px] font-bold leading-tight text-brand-ink">{value}</p>
+              <p className="text-[19px] font-black text-brand-navy">{label}</p>
+              <p className="text-[19px] font-bold leading-tight text-brand-ink">{value}</p>
             </div>
           </div>
         ))}

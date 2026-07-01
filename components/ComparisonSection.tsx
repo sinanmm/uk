@@ -9,12 +9,12 @@ export default function ComparisonSection() {
       </h2>
       <div className="relative grid gap-0 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-card md:grid-cols-[1fr_74px_1fr]">
         <div className="p-7">
-          <h3 className="mb-5 inline-flex rounded-full bg-red-100 px-6 py-2 text-[13px] font-black text-red-600">
+          <h3 className="mb-5 inline-flex rounded-full bg-red-100 px-6 py-2 text-[19px] font-black text-red-600">
             TRADITIONAL COURSES
           </h3>
           <ul className="space-y-3">
             {traditional.map((point) => (
-              <li key={point} className="flex items-start gap-3 text-[13px] font-bold text-brand-ink">
+              <li key={point} className="flex items-start gap-3 text-[19px] font-bold text-brand-ink">
                 <XCircle className="mt-0.5 shrink-0 text-red-500" size={17} fill="#ef4444" stroke="white" />
                 {point}
               </li>
@@ -29,12 +29,12 @@ export default function ComparisonSection() {
         </div>
 
         <div className="border-t border-slate-200 p-7 md:border-l md:border-t-0">
-          <h3 className="mb-5 inline-flex rounded-full bg-green-100 px-6 py-2 text-[13px] font-black text-brand-green">
+          <h3 className="mb-5 inline-flex rounded-full bg-green-100 px-6 py-2 text-[19px] font-black text-brand-green">
             PURE STARTUP ACADEMY
           </h3>
           <ul className="space-y-3">
             {psa.map((point) => (
-              <li key={point} className="flex items-start gap-3 text-[13px] font-bold text-brand-ink">
+              <li key={point} className="flex items-start gap-3 text-[19px] font-bold text-brand-ink">
                 <CheckCircle2 className="mt-0.5 shrink-0 text-brand-green" size={17} fill="#2f9424" stroke="white" />
                 {point}
               </li>

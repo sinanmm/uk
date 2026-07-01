@@ -58,12 +58,12 @@ export default function Program3Page() {
       <main className="pb-16 pt-[80px]">
         
         {/* HERO SECTION */}
-        <section className="bg-white overflow-hidden">
+        <section className="bg-prog3-pattern overflow-hidden">
           <div className="flex flex-col lg:flex-row items-center gap-12 max-w-[1300px] mx-auto pt-12 pb-16 px-4 relative z-10">
             <div className="flex-1 lg:max-w-[650px]">
               <div className="inline-flex items-center rounded-full mb-6 border border-gray-200 bg-gray-50 p-1 shadow-sm">
-                <span className="bg-brand-navy text-white font-black text-[13px] px-3 py-1 rounded-full uppercase">03</span>
-                <span className="text-brand-green font-black text-[12px] px-3 uppercase tracking-wider">PROGRAM 3</span>
+                <span className="bg-brand-navy text-white font-black text-[19px] px-3 py-1 rounded-full uppercase">03</span>
+                <span className="text-brand-green font-black text-[15px] px-3 uppercase tracking-wider">PROGRAM 3</span>
               </div>
               
               <div className="mb-6">
@@ -81,12 +81,12 @@ export default function Program3Page() {
               </div>
               
               <div className="bg-brand-navy rounded-sm px-4 py-2 mb-8 inline-block shadow-md">
-                <span className="text-[16px] sm:text-[20px] font-black uppercase tracking-wider text-white">
+                <span className="text-[20px] sm:text-[20px] font-black uppercase tracking-wider text-white">
                   12 MONTHS TO <span className="text-brand-green">SCALE. GROW. SUCCEED.</span>
                 </span>
               </div>
 
-              <p className="text-[17px] text-gray-700 font-medium max-w-lg leading-relaxed mb-10">
+              <p className="text-[19px] text-gray-700 font-medium max-w-lg leading-relaxed mb-10">
                 <span className="font-bold text-brand-navy">A practical, results-driven program</span> for serious founders who want long-term support, <span className="text-brand-green font-bold">exponential growth</span> and lasting impact.
               </p>
               
@@ -95,7 +95,7 @@ export default function Program3Page() {
                   <div className="w-12 h-12 rounded-full border border-green-200 flex items-center justify-center bg-white shadow-sm">
                     <Target className="w-6 h-6 text-brand-green stroke-[1.5]" />
                   </div>
-                  <div className="font-black text-[12px] uppercase leading-tight text-brand-navy max-w-[100px]">
+                  <div className="font-black text-[15px] uppercase leading-tight text-brand-navy max-w-[100px]">
                     PRACTICAL STRATEGIES
                   </div>
                 </div>
@@ -103,7 +103,7 @@ export default function Program3Page() {
                   <div className="w-12 h-12 rounded-full border border-green-200 flex items-center justify-center bg-white shadow-sm">
                     <Users className="w-6 h-6 text-brand-green stroke-[1.5]" />
                   </div>
-                  <div className="font-black text-[12px] uppercase leading-tight text-brand-navy max-w-[100px]">
+                  <div className="font-black text-[15px] uppercase leading-tight text-brand-navy max-w-[100px]">
                     EXPERT MENTORSHIP
                   </div>
                 </div>
@@ -111,7 +111,7 @@ export default function Program3Page() {
                   <div className="w-12 h-12 rounded-full border border-green-200 flex items-center justify-center bg-white shadow-sm">
                     <Trophy className="w-6 h-6 text-brand-green stroke-[1.5]" />
                   </div>
-                  <div className="font-black text-[12px] uppercase leading-tight text-brand-navy max-w-[100px]">
+                  <div className="font-black text-[15px] uppercase leading-tight text-brand-navy max-w-[100px]">
                     SCALE WITH CONFIDENCE
                   </div>
                 </div>
@@ -131,7 +131,7 @@ export default function Program3Page() {
         </section>
 
         {/* CURRICULUM */}
-        <section className="py-20 px-4 bg-white border-t border-gray-100">
+        <section className="py-20 px-4 bg-white-pattern border-t border-gray-100">
           <div className="text-center mb-16 flex items-center justify-center gap-6">
             <div className="hidden md:flex gap-1"><div className="w-12 h-[2px] bg-brand-green opacity-50"></div><div className="w-3 h-[2px] bg-brand-green opacity-50"></div></div>
             <h2 className="text-[28px] sm:text-[36px] font-black uppercase text-brand-navy tracking-wide">
@@ -142,13 +142,13 @@ export default function Program3Page() {
           <div className="max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-5 gap-6">
             {curriculum.map((item, i) => (
               <div key={i} className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col items-center text-center relative h-full transition-transform hover:-translate-y-1">
-                <div className={`absolute top-0 left-4 ${item.numBg} text-white font-black text-[12px] px-3 py-1 rounded-b-md`}>
+                <div className={`absolute top-0 left-4 ${item.numBg} text-white font-black text-[15px] px-3 py-1 rounded-b-md`}>
                   {String(i + 1).padStart(2, '0')}
                 </div>
                 <div className="w-16 h-16 rounded-full flex items-center justify-center mb-4 mt-4">
                   <item.icon className={`w-10 h-10 ${item.color} stroke-[1.5]`} />
                 </div>
-                <h3 className="text-[12px] font-black uppercase text-brand-navy leading-snug tracking-wider">
+                <h3 className="text-[15px] font-black uppercase text-brand-navy leading-snug tracking-wider">
                   {item.title}
                 </h3>
               </div>
@@ -157,7 +157,7 @@ export default function Program3Page() {
         </section>
 
         {/* WHO IS THIS PROGRAM FOR */}
-        <section className="py-20 px-4 bg-gray-50/50 overflow-hidden">
+        <section className="py-20 px-4 bg-grid-pattern/50 overflow-hidden">
           <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-16 items-center">
             
             <div className="w-full lg:w-[450px]">
@@ -176,7 +176,7 @@ export default function Program3Page() {
                       <div className={`w-12 h-12 rounded-full ${i % 2 === 0 ? 'bg-brand-green' : 'bg-[#15357e]'} flex items-center justify-center flex-shrink-0 shadow-md`}>
                         <item.icon className="w-6 h-6 text-white" />
                       </div>
-                      <div className="font-bold text-brand-navy text-[15px] leading-snug">
+                      <div className="font-bold text-brand-navy text-[19px] leading-snug">
                         {item.text}
                       </div>
                     </div>
@@ -198,7 +198,7 @@ export default function Program3Page() {
                 
                 {/* Q1 */}
                 <div className="bg-green-50 border border-green-200 rounded-xl overflow-hidden shadow-sm flex flex-col">
-                  <div className="bg-brand-green text-white text-center py-2 font-black text-[12px] uppercase tracking-wider relative">
+                  <div className="bg-brand-green text-white text-center py-2 font-black text-[15px] uppercase tracking-wider relative">
                     QUARTER 1
                     <div className="absolute right-[-10px] top-0 bottom-0 w-6 bg-brand-green transform skew-x-12 hidden lg:block z-10"></div>
                   </div>
@@ -207,19 +207,19 @@ export default function Program3Page() {
                       <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center border border-green-200">
                          <Rocket className="w-5 h-5 text-brand-green" />
                       </div>
-                      <h3 className="font-black text-brand-green text-[13px] uppercase leading-tight">BUILD STRONG FOUNDATIONS</h3>
+                      <h3 className="font-black text-brand-green text-[19px] uppercase leading-tight">BUILD STRONG FOUNDATIONS</h3>
                     </div>
                     <ul className="space-y-3">
-                      <li className="flex gap-2 items-start"><span className="text-brand-green font-black text-[10px] mt-0.5">01</span><span className="text-[10px] font-black uppercase text-brand-navy leading-tight">BUSINESS STRATEGY & GROWTH PLANNING</span></li>
-                      <li className="flex gap-2 items-start"><span className="text-brand-green font-black text-[10px] mt-0.5">02</span><span className="text-[10px] font-black uppercase text-brand-navy leading-tight">ADVANCED SALES, ACQUISITION & MARKETING</span></li>
-                      <li className="flex gap-2 items-start"><span className="text-brand-green font-black text-[10px] mt-0.5">03</span><span className="text-[10px] font-black uppercase text-brand-navy leading-tight">OPERATIONS, SOPS & BUSINESS SYSTEMS</span></li>
+                      <li className="flex gap-2 items-start"><span className="text-brand-green font-black text-[13px] mt-0.5">01</span><span className="text-[13px] font-black uppercase text-brand-navy leading-tight">BUSINESS STRATEGY & GROWTH PLANNING</span></li>
+                      <li className="flex gap-2 items-start"><span className="text-brand-green font-black text-[13px] mt-0.5">02</span><span className="text-[13px] font-black uppercase text-brand-navy leading-tight">ADVANCED SALES, ACQUISITION & MARKETING</span></li>
+                      <li className="flex gap-2 items-start"><span className="text-brand-green font-black text-[13px] mt-0.5">03</span><span className="text-[13px] font-black uppercase text-brand-navy leading-tight">OPERATIONS, SOPS & BUSINESS SYSTEMS</span></li>
                     </ul>
                   </div>
                 </div>
 
                 {/* Q2 */}
                 <div className="bg-blue-50 border border-blue-200 rounded-xl overflow-hidden shadow-sm flex flex-col">
-                  <div className="bg-blue-600 text-white text-center py-2 font-black text-[12px] uppercase tracking-wider relative">
+                  <div className="bg-blue-600 text-white text-center py-2 font-black text-[15px] uppercase tracking-wider relative">
                     QUARTER 2
                     <div className="absolute right-[-10px] top-0 bottom-0 w-6 bg-blue-600 transform skew-x-12 hidden lg:block z-10"></div>
                   </div>
@@ -228,19 +228,19 @@ export default function Program3Page() {
                       <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center border border-blue-200">
                          <TrendingUp className="w-5 h-5 text-blue-600" />
                       </div>
-                      <h3 className="font-black text-blue-600 text-[13px] uppercase leading-tight">OPTIMISE PERFORMANCE</h3>
+                      <h3 className="font-black text-blue-600 text-[19px] uppercase leading-tight">OPTIMISE PERFORMANCE</h3>
                     </div>
                     <ul className="space-y-3">
-                      <li className="flex gap-2 items-start"><span className="text-blue-600 font-black text-[10px] mt-0.5">04</span><span className="text-[10px] font-black uppercase text-brand-navy leading-tight">FINANCIAL PLANNING & PROFIT OPTIMISATION</span></li>
-                      <li className="flex gap-2 items-start"><span className="text-blue-600 font-black text-[10px] mt-0.5">05</span><span className="text-[10px] font-black uppercase text-brand-navy leading-tight">CUSTOMER EXPERIENCE, RETENTION & UPSELLING</span></li>
-                      <li className="flex gap-2 items-start"><span className="text-blue-600 font-black text-[10px] mt-0.5">06</span><span className="text-[10px] font-black uppercase text-brand-navy leading-tight">LEADERSHIP, TEAM BUILDING & HIRING</span></li>
+                      <li className="flex gap-2 items-start"><span className="text-blue-600 font-black text-[13px] mt-0.5">04</span><span className="text-[13px] font-black uppercase text-brand-navy leading-tight">FINANCIAL PLANNING & PROFIT OPTIMISATION</span></li>
+                      <li className="flex gap-2 items-start"><span className="text-blue-600 font-black text-[13px] mt-0.5">05</span><span className="text-[13px] font-black uppercase text-brand-navy leading-tight">CUSTOMER EXPERIENCE, RETENTION & UPSELLING</span></li>
+                      <li className="flex gap-2 items-start"><span className="text-blue-600 font-black text-[13px] mt-0.5">06</span><span className="text-[13px] font-black uppercase text-brand-navy leading-tight">LEADERSHIP, TEAM BUILDING & HIRING</span></li>
                     </ul>
                   </div>
                 </div>
 
                 {/* Q3 */}
                 <div className="bg-green-50 border border-green-200 rounded-xl overflow-hidden shadow-sm flex flex-col">
-                  <div className="bg-brand-green text-white text-center py-2 font-black text-[12px] uppercase tracking-wider relative">
+                  <div className="bg-brand-green text-white text-center py-2 font-black text-[15px] uppercase tracking-wider relative">
                     QUARTER 3
                     <div className="absolute right-[-10px] top-0 bottom-0 w-6 bg-brand-green transform skew-x-12 hidden lg:block z-10"></div>
                   </div>
@@ -249,18 +249,18 @@ export default function Program3Page() {
                       <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center border border-green-200">
                          <Globe className="w-5 h-5 text-brand-green" />
                       </div>
-                      <h3 className="font-black text-brand-green text-[13px] uppercase leading-tight">SCALE THE BUSINESS</h3>
+                      <h3 className="font-black text-brand-green text-[19px] uppercase leading-tight">SCALE THE BUSINESS</h3>
                     </div>
                     <ul className="space-y-3">
-                      <li className="flex gap-2 items-start"><span className="text-brand-green font-black text-[10px] mt-0.5">07</span><span className="text-[10px] font-black uppercase text-brand-navy leading-tight">EXPANSION & SCALING</span></li>
-                      <li className="flex gap-2 items-start"><span className="text-brand-green font-black text-[10px] mt-0.5">08</span><span className="text-[10px] font-black uppercase text-brand-navy leading-tight">FUNDING, INVESTOR READINESS & BUSINESS VALUATION</span></li>
+                      <li className="flex gap-2 items-start"><span className="text-brand-green font-black text-[13px] mt-0.5">07</span><span className="text-[13px] font-black uppercase text-brand-navy leading-tight">EXPANSION & SCALING</span></li>
+                      <li className="flex gap-2 items-start"><span className="text-brand-green font-black text-[13px] mt-0.5">08</span><span className="text-[13px] font-black uppercase text-brand-navy leading-tight">FUNDING, INVESTOR READINESS & BUSINESS VALUATION</span></li>
                     </ul>
                   </div>
                 </div>
 
                 {/* Q4 */}
                 <div className="bg-purple-50 border border-purple-200 rounded-xl overflow-hidden shadow-sm flex flex-col">
-                  <div className="bg-purple-600 text-white text-center py-2 font-black text-[12px] uppercase tracking-wider">
+                  <div className="bg-purple-600 text-white text-center py-2 font-black text-[15px] uppercase tracking-wider">
                     QUARTER 4
                   </div>
                   <div className="p-4 flex-1">
@@ -268,11 +268,11 @@ export default function Program3Page() {
                       <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center border border-purple-200">
                          <Trophy className="w-5 h-5 text-purple-600" />
                       </div>
-                      <h3 className="font-black text-purple-600 text-[13px] uppercase leading-tight">BUILD ENTERPRISE VALUE</h3>
+                      <h3 className="font-black text-purple-600 text-[19px] uppercase leading-tight">BUILD ENTERPRISE VALUE</h3>
                     </div>
                     <ul className="space-y-3">
-                      <li className="flex gap-2 items-start"><span className="text-purple-600 font-black text-[10px] mt-0.5">09</span><span className="text-[10px] font-black uppercase text-brand-navy leading-tight">EXIT STRATEGIES, MERGERS & ACQUISITIONS</span></li>
-                      <li className="flex gap-2 items-start"><span className="text-purple-600 font-black text-[10px] mt-0.5">10</span><span className="text-[10px] font-black uppercase text-brand-navy leading-tight">CORPORATE GROWTH, IPO ROADMAP & LEGACY BUILDING</span></li>
+                      <li className="flex gap-2 items-start"><span className="text-purple-600 font-black text-[13px] mt-0.5">09</span><span className="text-[13px] font-black uppercase text-brand-navy leading-tight">EXIT STRATEGIES, MERGERS & ACQUISITIONS</span></li>
+                      <li className="flex gap-2 items-start"><span className="text-purple-600 font-black text-[13px] mt-0.5">10</span><span className="text-[13px] font-black uppercase text-brand-navy leading-tight">CORPORATE GROWTH, IPO ROADMAP & LEGACY BUILDING</span></li>
                     </ul>
                   </div>
                 </div>
@@ -284,14 +284,14 @@ export default function Program3Page() {
         </section>
 
         {/* LEARNING FORMAT */}
-        <section className="py-20 px-4 bg-white">
+        <section className="py-20 px-4 bg-white-pattern">
           <div className="text-center mb-12">
             <h2 className="text-[32px] sm:text-[40px] font-black uppercase text-brand-navy">
               LEARNING <span className="text-brand-green">FORMAT</span>
             </h2>
             <div className="flex items-center justify-center gap-4 mt-2">
                <div className="w-12 h-px bg-brand-green"></div>
-               <p className="text-gray-600 font-bold tracking-widest text-[13px]">
+               <p className="text-gray-600 font-bold tracking-widest text-[19px]">
                  Flexible. Practical. Results-Driven.
                </p>
                <div className="w-12 h-px bg-brand-green"></div>
@@ -304,8 +304,8 @@ export default function Program3Page() {
                 <Calendar className="w-7 h-7 text-green-600 stroke-[1.5]" />
               </div>
               <div>
-                <div className="text-[13px] font-black text-green-600 uppercase tracking-widest mb-1">DURATION</div>
-                <div className="font-bold text-brand-navy text-[17px]">3 Months</div>
+                <div className="text-[19px] font-black text-green-600 uppercase tracking-widest mb-1">DURATION</div>
+                <div className="font-bold text-brand-navy text-[19px]">3 Months</div>
               </div>
             </div>
             
@@ -314,8 +314,8 @@ export default function Program3Page() {
                 <CalendarDays className="w-7 h-7 text-blue-600 stroke-[1.5]" />
               </div>
               <div>
-                <div className="text-[13px] font-black text-blue-600 uppercase tracking-widest mb-1">SCHEDULE</div>
-                <div className="font-bold text-brand-navy text-[17px]">2 Sessions per Week</div>
+                <div className="text-[19px] font-black text-blue-600 uppercase tracking-widest mb-1">SCHEDULE</div>
+                <div className="font-bold text-brand-navy text-[19px]">2 Sessions per Week</div>
               </div>
             </div>
             
@@ -324,8 +324,8 @@ export default function Program3Page() {
                 <Clock className="w-7 h-7 text-yellow-500 stroke-[1.5]" />
               </div>
               <div>
-                <div className="text-[13px] font-black text-yellow-500 uppercase tracking-widest mb-1">SESSION LENGTH</div>
-                <div className="font-bold text-brand-navy text-[17px]">2 Hours per Session</div>
+                <div className="text-[19px] font-black text-yellow-500 uppercase tracking-widest mb-1">SESSION LENGTH</div>
+                <div className="font-bold text-brand-navy text-[19px]">2 Hours per Session</div>
               </div>
             </div>
             
@@ -334,9 +334,9 @@ export default function Program3Page() {
                 <MonitorPlay className="w-7 h-7 text-purple-600 stroke-[1.5]" />
               </div>
               <div>
-                <div className="text-[13px] font-black text-purple-600 uppercase tracking-widest mb-1">MODE</div>
-                <div className="font-bold text-brand-navy text-[17px]">Live Online + Recorded Sessions</div>
-                <div className="text-gray-500 text-[13px] font-medium mt-1">So you never miss a lesson.</div>
+                <div className="text-[19px] font-black text-purple-600 uppercase tracking-widest mb-1">MODE</div>
+                <div className="font-bold text-brand-navy text-[19px]">Live Online + Recorded Sessions</div>
+                <div className="text-gray-500 text-[19px] font-medium mt-1">So you never miss a lesson.</div>
               </div>
             </div>
             
@@ -345,16 +345,16 @@ export default function Program3Page() {
                 <Users className="w-7 h-7 text-teal-600 stroke-[1.5]" />
               </div>
               <div>
-                <div className="text-[13px] font-black text-teal-600 uppercase tracking-widest mb-1">LEARNING STYLE</div>
-                <div className="font-bold text-brand-navy text-[17px]">Interactive Workshops & Activities</div>
-                <div className="text-gray-500 text-[13px] font-medium mt-1">Learn by doing. Apply in real life.</div>
+                <div className="text-[19px] font-black text-teal-600 uppercase tracking-widest mb-1">LEARNING STYLE</div>
+                <div className="font-bold text-brand-navy text-[19px]">Interactive Workshops & Activities</div>
+                <div className="text-gray-500 text-[19px] font-medium mt-1">Learn by doing. Apply in real life.</div>
               </div>
             </div>
           </div>
         </section>
 
         {/* INVESTMENT */}
-        <section className="py-20 px-4 bg-gray-50/50">
+        <section className="py-20 px-4 bg-grid-pattern/50">
           <div className="text-center mb-16 flex items-center justify-center gap-6">
             <div className="hidden md:flex gap-1"><div className="w-12 h-px bg-brand-green"></div></div>
             <h2 className="text-[32px] sm:text-[40px] font-black uppercase text-brand-navy">
@@ -363,13 +363,13 @@ export default function Program3Page() {
             <div className="hidden md:flex gap-1"><div className="w-12 h-px bg-brand-green"></div></div>
           </div>
           <div className="text-center -mt-12 mb-12">
-             <p className="text-gray-600 font-bold tracking-wider text-[14px]">
+             <p className="text-gray-600 font-bold tracking-wider text-[20px]">
                <Check className="w-4 h-4 text-brand-green inline mr-1 -mt-1"/> Flexible options. <span className="text-brand-green">Maximum value.</span>
              </p>
           </div>
           
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 relative">
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center font-bold text-[12px] text-gray-500 z-10 hidden md:flex border border-gray-200 shadow-sm">
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center font-bold text-[15px] text-gray-500 z-10 hidden md:flex border border-gray-200 shadow-sm">
                OR
             </div>
             
@@ -379,28 +379,28 @@ export default function Program3Page() {
                 <Award className="w-7 h-7 text-white stroke-[1.5]" />
               </div>
               <div className="text-center mb-8 pt-8">
-                <div className="text-[13px] font-black text-white bg-brand-green px-5 py-2 rounded-full inline-block mb-4 uppercase tracking-widest shadow-sm">
+                <div className="text-[19px] font-black text-white bg-brand-green px-5 py-2 rounded-full inline-block mb-4 uppercase tracking-widest shadow-sm">
                   ONE-TIME PAYMENT
                 </div>
                 <div className="text-[56px] font-black text-brand-navy leading-none">£1200</div>
-                <div className="text-gray-400 font-bold text-[14px] mt-2 uppercase tracking-wide">+ VAT</div>
+                <div className="text-gray-400 font-bold text-[20px] mt-2 uppercase tracking-wide">+ VAT</div>
               </div>
               <div className="bg-green-50 border border-green-100 text-center py-3 rounded-[12px] mb-8 flex items-center justify-center gap-2">
                  <Calendar className="w-4 h-4 text-green-700 stroke-[2]" />
-                 <span className="font-bold text-[13px] text-green-800 tracking-wide">DURATION: 12 MONTHS COURSE</span>
+                 <span className="font-bold text-[19px] text-green-800 tracking-wide">DURATION: 12 MONTHS COURSE</span>
               </div>
               <div className="space-y-5 mb-10 flex-1 pl-4">
                 <div className="flex items-center gap-4">
                   <Users className="w-5 h-5 text-brand-green stroke-[2]" />
-                  <span className="text-brand-navy font-bold text-[14px] uppercase tracking-wide">FULL PROGRAMME ACCESS</span>
+                  <span className="text-brand-navy font-bold text-[20px] uppercase tracking-wide">FULL PROGRAMME ACCESS</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <Gift className="w-5 h-5 text-brand-green stroke-[2]" />
-                  <span className="text-brand-navy font-bold text-[14px] uppercase tracking-wide">ALL BONUSES INCLUDED</span>
+                  <span className="text-brand-navy font-bold text-[20px] uppercase tracking-wide">ALL BONUSES INCLUDED</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <FileText className="w-5 h-5 text-brand-green stroke-[2]" />
-                  <span className="text-brand-navy font-bold text-[14px] uppercase tracking-wide">CERTIFICATE OF COMPLETION</span>
+                  <span className="text-brand-navy font-bold text-[20px] uppercase tracking-wide">CERTIFICATE OF COMPLETION</span>
                 </div>
               </div>
               <Link href={checkoutUrl} target="_blank" className="w-full bg-brand-green text-white py-4 rounded-full font-black uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-green-700 transition">
@@ -419,28 +419,28 @@ export default function Program3Page() {
                 <CalendarDays className="w-7 h-7 text-white stroke-[1.5]" />
               </div>
               <div className="text-center mb-8 pt-8">
-                <div className="text-[13px] font-black text-white bg-blue-600 px-5 py-2 rounded-full inline-block mb-4 uppercase tracking-widest shadow-sm">
+                <div className="text-[19px] font-black text-white bg-blue-600 px-5 py-2 rounded-full inline-block mb-4 uppercase tracking-widest shadow-sm">
                   MONTHLY PLAN
                 </div>
                 <div className="text-[56px] font-black text-brand-navy leading-none">£100</div>
-                <div className="text-gray-400 font-bold text-[14px] mt-2 uppercase tracking-wide">+ VAT / MONTH</div>
+                <div className="text-gray-400 font-bold text-[20px] mt-2 uppercase tracking-wide">+ VAT / MONTH</div>
               </div>
               <div className="bg-blue-50 border border-blue-100 text-center py-3 rounded-[12px] mb-8 flex items-center justify-center gap-2">
                  <Calendar className="w-4 h-4 text-blue-700 stroke-[2]" />
-                 <span className="font-bold text-[13px] text-blue-800 tracking-wide">DURATION: 12 MONTHS COURSE</span>
+                 <span className="font-bold text-[19px] text-blue-800 tracking-wide">DURATION: 12 MONTHS COURSE</span>
               </div>
               <div className="space-y-5 mb-10 flex-1 pl-4">
                 <div className="flex items-center gap-4">
                   <Clock className="w-5 h-5 text-blue-600 stroke-[2]" />
-                  <span className="text-brand-navy font-bold text-[14px] uppercase tracking-wide">PAY IN EASY MONTHLY INSTALMENTS</span>
+                  <span className="text-brand-navy font-bold text-[20px] uppercase tracking-wide">PAY IN EASY MONTHLY INSTALMENTS</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <Gift className="w-5 h-5 text-blue-600 stroke-[2]" />
-                  <span className="text-brand-navy font-bold text-[14px] uppercase tracking-wide">ALL BONUSES INCLUDED</span>
+                  <span className="text-brand-navy font-bold text-[20px] uppercase tracking-wide">ALL BONUSES INCLUDED</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <FileText className="w-5 h-5 text-blue-600 stroke-[2]" />
-                  <span className="text-brand-navy font-bold text-[14px] uppercase tracking-wide">CERTIFICATE OF COMPLETION</span>
+                  <span className="text-brand-navy font-bold text-[20px] uppercase tracking-wide">CERTIFICATE OF COMPLETION</span>
                 </div>
               </div>
               <Link href={checkoutUrl} target="_blank" className="w-full bg-blue-600 text-white py-4 rounded-full font-black uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-blue-700 transition">
@@ -463,7 +463,7 @@ export default function Program3Page() {
                    </div>
                    <div className="leading-tight">
                       <div className="text-[11px] text-gray-400 uppercase tracking-widest font-bold mb-0.5">OUR GOAL IS</div>
-                      <div className="text-[16px] text-brand-green uppercase tracking-wide font-black">YOUR SUCCESS</div>
+                      <div className="text-[20px] text-brand-green uppercase tracking-wide font-black">YOUR SUCCESS</div>
                    </div>
                  </div>
                  <div className="h-12 w-px bg-white/20 hidden md:block"></div>
@@ -480,12 +480,12 @@ export default function Program3Page() {
                   <div className="w-7 h-7 rounded-full bg-brand-green flex items-center justify-center flex-shrink-0">
                     <ArrowRight className="w-4 h-4 text-white stroke-[3]" />
                   </div>
-                  <div className="font-black text-[15px] sm:text-[17px] uppercase text-brand-navy leading-snug tracking-wide">
+                  <div className="font-black text-[19px] sm:text-[19px] uppercase text-brand-navy leading-snug tracking-wide">
                     THINK BIG. SCALE SMART.<br className="hidden sm:block"/>
                     <span className="text-brand-green">BUILD A BUSINESS THAT LASTS.</span>
                   </div>
                </div>
-               <Link href={checkoutUrl} target="_blank" className="bg-brand-green text-white px-8 py-3 rounded font-black uppercase text-sm tracking-widest hover:bg-green-700 transition flex items-center gap-2 flex-shrink-0">
+               <Link href={checkoutUrl} target="_blank" className="bg-brand-green text-white px-8 py-3 rounded font-black uppercase text-base tracking-widest hover:bg-green-700 transition flex items-center gap-2 flex-shrink-0">
                   ENROLL NOW &rarr;
                </Link>
             </div>

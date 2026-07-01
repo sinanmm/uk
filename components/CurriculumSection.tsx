@@ -17,10 +17,10 @@ export default function CurriculumSection() {
               <span className="flex size-10 items-center justify-center rounded-md border border-slate-200 text-brand-green">
                 <Icon size={22} strokeWidth={1.8} />
               </span>
-              <span className="text-[15px] font-extrabold leading-tight">{title}</span>
+              <span className="text-[19px] font-extrabold leading-tight">{title}</span>
               <ChevronDown className="details-chevron transition" size={18} />
             </summary>
-            <div className="px-28 pb-4 text-sm font-semibold leading-7 text-slate-600 max-sm:px-4">
+            <div className="px-28 pb-4 text-base font-semibold leading-7 text-slate-600 max-sm:px-4">
               {title}
             </div>
           </details>
