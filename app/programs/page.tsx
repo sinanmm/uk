@@ -59,7 +59,7 @@ export default function ProgramsPage() {
                     <Link href="#programme-grid" className="btn-primary bg-white text-brand-navy hover:bg-slate-100">
                       Explore Programmes <ArrowRight size={16} />
                     </Link>
-                    <Link href="/#contact" className="btn-secondary border-white/40 bg-transparent text-white hover:border-white hover:bg-white/10 hover:text-white">
+                    <Link href="/contact" className="btn-secondary border-white/40 bg-transparent text-white hover:border-white hover:bg-white/10 hover:text-white">
                       Book Free Consultation
                     </Link>
                   </div>

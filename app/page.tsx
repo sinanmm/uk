@@ -389,10 +389,10 @@ export default function Home() {
               <div className="px-6 py-7 sm:px-8 md:px-10 md:py-9">
                 <div className="inline-flex rounded-[8px] bg-brand-green px-4 py-2 text-[20px] font-black uppercase shadow-[0_0_15px_rgba(47,148,36,0.5)]">LIVE</div>
                 <p className="mt-5 flex items-center gap-2 flex-wrap text-[20px] font-semibold text-white/90">
-                  Monthly 
                   <span className="text-[28px] font-black uppercase tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-400 drop-shadow-md">
                     Free Live Webinar
                   </span>
+                  every month
                 </p>
                 <h3 className="mt-4 text-[36px] font-black leading-[1.04] sm:text-[44px]">From Idea to First Customer</h3>
                 <p className="mt-4 max-w-[520px] text-[20px] leading-tight text-white/86">

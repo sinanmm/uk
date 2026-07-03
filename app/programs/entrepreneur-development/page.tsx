@@ -203,11 +203,11 @@ export default function Program3Page() {
                     <div className="absolute right-[-10px] top-0 bottom-0 w-6 bg-brand-green transform skew-x-12 hidden lg:block z-10"></div>
                   </div>
                   <div className="p-4 flex-1">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center border border-green-200">
+                    <div className="flex flex-col gap-3 mb-4">
+                      <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center border border-green-200 flex-shrink-0">
                          <Rocket className="w-5 h-5 text-brand-green" />
                       </div>
-                      <h3 className="font-black text-brand-green text-[19px] uppercase leading-tight">BUILD STRONG FOUNDATIONS</h3>
+                      <h3 className="font-black text-brand-green text-[17px] uppercase leading-tight">BUILD STRONG FOUNDATIONS</h3>
                     </div>
                     <ul className="space-y-3">
                       <li className="flex gap-2 items-start"><span className="text-brand-green font-black text-[13px] mt-0.5">01</span><span className="text-[13px] font-black uppercase text-brand-navy leading-tight">BUSINESS STRATEGY & GROWTH PLANNING</span></li>
@@ -224,11 +224,11 @@ export default function Program3Page() {
                     <div className="absolute right-[-10px] top-0 bottom-0 w-6 bg-blue-600 transform skew-x-12 hidden lg:block z-10"></div>
                   </div>
                   <div className="p-4 flex-1">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center border border-blue-200">
+                    <div className="flex flex-col gap-3 mb-4">
+                      <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center border border-blue-200 flex-shrink-0">
                          <TrendingUp className="w-5 h-5 text-blue-600" />
                       </div>
-                      <h3 className="font-black text-blue-600 text-[19px] uppercase leading-tight">OPTIMISE PERFORMANCE</h3>
+                      <h3 className="font-black text-blue-600 text-[17px] uppercase leading-tight">OPTIMISE PERFORMANCE</h3>
                     </div>
                     <ul className="space-y-3">
                       <li className="flex gap-2 items-start"><span className="text-blue-600 font-black text-[13px] mt-0.5">04</span><span className="text-[13px] font-black uppercase text-brand-navy leading-tight">FINANCIAL PLANNING & PROFIT OPTIMISATION</span></li>
@@ -245,11 +245,11 @@ export default function Program3Page() {
                     <div className="absolute right-[-10px] top-0 bottom-0 w-6 bg-brand-green transform skew-x-12 hidden lg:block z-10"></div>
                   </div>
                   <div className="p-4 flex-1">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center border border-green-200">
+                    <div className="flex flex-col gap-3 mb-4">
+                      <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center border border-green-200 flex-shrink-0">
                          <Globe className="w-5 h-5 text-brand-green" />
                       </div>
-                      <h3 className="font-black text-brand-green text-[19px] uppercase leading-tight">SCALE THE BUSINESS</h3>
+                      <h3 className="font-black text-brand-green text-[17px] uppercase leading-tight">SCALE THE BUSINESS</h3>
                     </div>
                     <ul className="space-y-3">
                       <li className="flex gap-2 items-start"><span className="text-brand-green font-black text-[13px] mt-0.5">07</span><span className="text-[13px] font-black uppercase text-brand-navy leading-tight">EXPANSION & SCALING</span></li>
@@ -264,11 +264,11 @@ export default function Program3Page() {
                     QUARTER 4
                   </div>
                   <div className="p-4 flex-1">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center border border-purple-200">
+                    <div className="flex flex-col gap-3 mb-4">
+                      <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center border border-purple-200 flex-shrink-0">
                          <Trophy className="w-5 h-5 text-purple-600" />
                       </div>
-                      <h3 className="font-black text-purple-600 text-[19px] uppercase leading-tight">BUILD ENTERPRISE VALUE</h3>
+                      <h3 className="font-black text-purple-600 text-[17px] uppercase leading-tight">BUILD ENTERPRISE VALUE</h3>
                     </div>
                     <ul className="space-y-3">
                       <li className="flex gap-2 items-start"><span className="text-purple-600 font-black text-[13px] mt-0.5">09</span><span className="text-[13px] font-black uppercase text-brand-navy leading-tight">EXIT STRATEGIES, MERGERS & ACQUISITIONS</span></li>
@@ -305,7 +305,7 @@ export default function Program3Page() {
               </div>
               <div>
                 <div className="text-[19px] font-black text-green-600 uppercase tracking-widest mb-1">DURATION</div>
-                <div className="font-bold text-brand-navy text-[19px]">3 Months</div>
+                <div className="font-bold text-brand-navy text-[19px]">12 Months</div>
               </div>
             </div>
             
@@ -354,7 +354,7 @@ export default function Program3Page() {
         </section>
 
         {/* INVESTMENT */}
-        <section className="py-20 px-4 bg-grid-pattern/50">
+        <section id="investment" className="py-20 px-4 bg-grid-pattern/50">
           <div className="text-center mb-16 flex items-center justify-center gap-6">
             <div className="hidden md:flex gap-1"><div className="w-12 h-px bg-brand-green"></div></div>
             <h2 className="text-[32px] sm:text-[40px] font-black uppercase text-brand-navy">
@@ -382,8 +382,10 @@ export default function Program3Page() {
                 <div className="text-[19px] font-black text-white bg-brand-green px-5 py-2 rounded-full inline-block mb-4 uppercase tracking-widest shadow-sm">
                   ONE-TIME PAYMENT
                 </div>
-                <div className="text-[56px] font-black text-brand-navy leading-none">£1200</div>
-                <div className="text-gray-400 font-bold text-[20px] mt-2 uppercase tracking-wide">+ VAT</div>
+                <div className="text-[56px] font-black text-brand-navy leading-none flex items-start justify-center">
+                  £1200
+                  <span className="text-[20px] text-gray-400 font-bold ml-2 mt-2 uppercase tracking-wide">+ VAT</span>
+                </div>
               </div>
               <div className="bg-green-50 border border-green-100 text-center py-3 rounded-[12px] mb-8 flex items-center justify-center gap-2">
                  <Calendar className="w-4 h-4 text-green-700 stroke-[2]" />
@@ -422,8 +424,10 @@ export default function Program3Page() {
                 <div className="text-[19px] font-black text-white bg-blue-600 px-5 py-2 rounded-full inline-block mb-4 uppercase tracking-widest shadow-sm">
                   MONTHLY PLAN
                 </div>
-                <div className="text-[56px] font-black text-brand-navy leading-none">£100</div>
-                <div className="text-gray-400 font-bold text-[20px] mt-2 uppercase tracking-wide">+ VAT / MONTH</div>
+                <div className="text-[56px] font-black text-brand-navy leading-none flex items-start justify-center">
+                  £100
+                  <span className="text-[20px] text-gray-400 font-bold ml-2 mt-2 uppercase tracking-wide">+ VAT / MONTH</span>
+                </div>
               </div>
               <div className="bg-blue-50 border border-blue-100 text-center py-3 rounded-[12px] mb-8 flex items-center justify-center gap-2">
                  <Calendar className="w-4 h-4 text-blue-700 stroke-[2]" />
@@ -443,7 +447,7 @@ export default function Program3Page() {
                   <span className="text-brand-navy font-bold text-[20px] uppercase tracking-wide">CERTIFICATE OF COMPLETION</span>
                 </div>
               </div>
-              <Link href={checkoutUrl} target="_blank" className="w-full bg-blue-600 text-white py-4 rounded-full font-black uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-blue-700 transition">
+              <Link href="https://buy.stripe.com/00wcN67wZfIP9ca5vLaMU00" target="_blank" className="w-full bg-blue-600 text-white py-4 rounded-full font-black uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-blue-700 transition">
                 ENROLL NOW &rarr;
               </Link>
               <div className="text-center mt-5">
@@ -485,9 +489,9 @@ export default function Program3Page() {
                     <span className="text-brand-green">BUILD A BUSINESS THAT LASTS.</span>
                   </div>
                </div>
-               <Link href={checkoutUrl} target="_blank" className="bg-brand-green text-white px-8 py-3 rounded font-black uppercase text-base tracking-widest hover:bg-green-700 transition flex items-center gap-2 flex-shrink-0">
-                  ENROLL NOW &rarr;
-               </Link>
+                <Link href="#investment" className="bg-brand-green text-white px-8 py-3.5 rounded font-black uppercase text-base tracking-widest hover:bg-green-700 transition flex items-center gap-2 border-2 border-brand-green">
+                  ENROLL NOW
+                </Link>
             </div>
           </div>
           

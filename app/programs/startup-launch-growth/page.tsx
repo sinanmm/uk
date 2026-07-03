@@ -204,25 +204,17 @@ export default function Program2Page() {
               
               <div className="flex flex-wrap items-center gap-4">
                 <Link
-                  href={checkoutUrl}
-                  target="_blank"
+                  href="#investment"
                   className="bg-brand-green text-white px-8 py-4 rounded font-black uppercase tracking-wide hover:bg-green-700 transition flex items-center gap-2"
                 >
-                  ENROLL NOW &rarr;
+                  ENROLL NOW &gt;
                 </Link>
                 <Link
-                  href="#"
+                  href="https://forms.zohopublic.eu/infopsac1/form/PureStartupAcademyRegistrationForm/formperma/QCaZ07UK0TadmpgM_-3X9o1xBPvaI6eodbpznGjBgyM?utm_source=ig&utm_medium=social&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3"
+                  target="_blank"
                   className="border border-gray-300 text-brand-navy bg-white px-6 py-4 rounded font-bold uppercase tracking-wide hover:bg-gray-50 transition flex items-center gap-2 text-[20px]"
                 >
                   <CalendarDays className="w-5 h-5 text-gray-500" /> BOOK CONSULTATION
-                </Link>
-                <Link
-                  href="https://forms.gle/RdmkJVkEP4UD1BJs5"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="border border-gray-300 text-brand-navy bg-white px-6 py-4 rounded font-bold uppercase tracking-wide hover:bg-gray-50 transition flex items-center gap-2 text-[20px]"
-                >
-                  <PlaySquare className="w-5 h-5 text-gray-500" /> JOIN FREE WEBINAR
                 </Link>
               </div>
             </div>
@@ -462,7 +454,7 @@ export default function Program2Page() {
         </section>
 
         {/* INVESTMENT */}
-        <section className="py-16 px-4 bg-grid-pattern/50">
+        <section id="investment" className="py-16 px-4 bg-grid-pattern/50">
           <div className="text-center mb-12">
             <h2 className="text-[28px] sm:text-[36px] font-black uppercase text-brand-navy">
               INVESTMENT
@@ -476,8 +468,10 @@ export default function Program2Page() {
                   <div className="text-[19px] font-black text-brand-green uppercase bg-green-50 px-3 py-1 rounded-full inline-block mb-3">
                     PAY IN FULL
                   </div>
-                  <div className="text-[42px] font-black text-brand-navy leading-none">£600</div>
-                  <div className="text-gray-400 font-semibold text-base mt-1">+ VAT</div>
+                  <div className="text-[42px] font-black text-brand-navy leading-none flex items-start">
+                    £600
+                    <span className="text-[16px] text-gray-400 font-semibold ml-2 mt-1">+ VAT</span>
+                  </div>
                 </div>
                 <div className="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center border-4 border-white shadow-sm">
                   <CheckCircle2 className="w-8 h-8 text-brand-green" />
@@ -491,10 +485,6 @@ export default function Program2Page() {
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-brand-green mt-0.5" />
                   <span className="text-gray-700 font-medium text-[19px]">All features included</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-brand-green mt-0.5" />
-                  <span className="text-gray-700 font-medium text-[19px]">Save by paying in full</span>
                 </div>
               </div>
               <Link
@@ -512,8 +502,10 @@ export default function Program2Page() {
                   <div className="text-[19px] font-black text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded-full inline-block mb-3">
                     MONTHLY PLAN
                   </div>
-                  <div className="text-[42px] font-black text-brand-navy leading-none">£100 <span className="text-xl">/ m</span></div>
-                  <div className="text-gray-400 font-semibold text-base mt-1">+ VAT for 6 months</div>
+                  <div className="text-[42px] font-black text-brand-navy leading-none flex items-start">
+                    £100
+                    <span className="text-[16px] text-gray-400 font-semibold ml-2 mt-1">+ VAT for 6 months</span>
+                  </div>
                 </div>
                 <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center border-4 border-white shadow-sm">
                   <CalendarDays className="w-8 h-8 text-blue-600" />
@@ -560,7 +552,7 @@ export default function Program2Page() {
                     <div className="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center mb-3">
                       <item.icon className="w-6 h-6 text-brand-green" />
                     </div>
-                    <span className="font-bold text-[14px] sm:text-[15px] uppercase text-brand-navy leading-tight">{item.text}</span>
+                    <span className="font-black text-[17px] sm:text-[19px] uppercase text-brand-navy leading-tight">{item.text}</span>
                   </div>
                 ))}
               </div>
@@ -621,14 +613,14 @@ export default function Program2Page() {
             
             <div className="z-10 flex flex-col gap-3 w-full md:w-auto min-w-[240px]">
               <Link
-                href={checkoutUrl}
-                target="_blank"
+                href="#investment"
                 className="bg-brand-green text-white px-8 py-4 rounded-xl font-black uppercase tracking-wide hover:bg-green-700 transition flex items-center justify-center gap-2"
               >
                 ENROLL NOW &gt;
               </Link>
               <Link
-                href="#"
+                href="https://forms.zohopublic.eu/infopsac1/form/PureStartupAcademyRegistrationForm/formperma/QCaZ07UK0TadmpgM_-3X9o1xBPvaI6eodbpznGjBgyM?utm_source=ig&utm_medium=social&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3"
+                target="_blank"
                 className="bg-transparent border border-white/30 text-white px-8 py-4 rounded-xl font-black uppercase tracking-wide hover:bg-white/10 transition flex items-center justify-center gap-2"
               >
                 <Calendar className="w-5 h-5" /> BOOK A CONSULTATION

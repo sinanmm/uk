@@ -26,6 +26,9 @@ import {
   Building2,
   CalendarDays,
   UsersRound,
+  Wrench,
+  Trophy,
+  Handshake,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -34,12 +37,12 @@ import { programsBySlug } from "@/components/programsData";
 const checkoutUrl = programsBySlug["startup-foundations"].checkoutUrl;
 
 const features = [
-  { label: "Weekly", icon: Calendar },
-  { label: "8 Modules", icon: Box },
-  { label: "Expert Feedback", icon: Headphones },
-  { label: "Certificate", icon: Award },
-  { label: "Community Access", icon: Users },
-  { label: "Lifetime Access", icon: PlaySquare },
+  { label: "Weekly Live Sessions", icon: CalendarDays },
+  { label: "8 Practical Modules", icon: Box },
+  { label: "Business Templates & Tools", icon: Wrench },
+  { label: "Certificate of Completion", icon: Trophy },
+  { label: "Community & Networking", icon: Handshake },
+  { label: "Action Plans & Assignments", icon: Rocket },
 ];
 
 const outcomesLeft = [
@@ -229,17 +232,17 @@ export default function Program1Page() {
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <Link
-                  href={checkoutUrl}
-                  target="_blank"
+                  href="#investment"
                   className="bg-brand-green text-white px-8 py-4 rounded-full font-black uppercase tracking-wide hover:bg-green-700 transition"
                 >
-                  ENROLL NOW
+                  ENROLL NOW &gt;
                 </Link>
                 <Link
-                  href="#"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSca2Cg9WMEDCA0ytT52QT0kvgF8s2cbW767Yo3dQyr_auUVCA/viewform"
+                  target="_blank"
                   className="border-2 border-brand-green text-brand-green px-8 py-4 rounded-full font-black uppercase tracking-wide hover:bg-green-50 transition"
                 >
-                  GET A PROSPECTUS
+                  BOOK A WEBINAR
                 </Link>
               </div>
             </div>
@@ -266,27 +269,27 @@ export default function Program1Page() {
 
         {/* OUTCOMES SECTION */}
         <section className="py-16 px-4 bg-prog1-pattern">
-          <h2 className="text-center text-[28px] sm:text-[36px] font-black uppercase text-brand-green mb-12">
+          <h2 className="text-center text-[32px] sm:text-[42px] font-black uppercase text-brand-green mb-14">
             BY THE END OF THIS PROGRAMME, YOU WILL:
           </h2>
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-x-12 gap-y-8">
             <div className="space-y-8">
               {outcomesLeft.map((item, i) => (
-                <div key={i} className="flex items-center gap-4">
-                  <div className="w-12 h-12 flex-shrink-0 rounded-full bg-green-50 flex items-center justify-center">
-                    <item.icon className="w-6 h-6 text-brand-green" />
+                <div key={i} className="flex items-center gap-5">
+                  <div className="w-14 h-14 flex-shrink-0 rounded-full bg-green-50 flex items-center justify-center">
+                    <item.icon className="w-7 h-7 text-brand-green stroke-[2.5]" />
                   </div>
-                  <span className="text-[19px] font-bold text-brand-navy">{item.text}</span>
+                  <span className="text-[22px] sm:text-[24px] font-bold text-brand-navy leading-snug">{item.text}</span>
                 </div>
               ))}
             </div>
             <div className="space-y-8">
               {outcomesRight.map((item, i) => (
-                <div key={i} className="flex items-center gap-4">
-                  <div className="w-12 h-12 flex-shrink-0 rounded-full bg-green-50 flex items-center justify-center">
-                    <item.icon className="w-6 h-6 text-brand-green" />
+                <div key={i} className="flex items-center gap-5">
+                  <div className="w-14 h-14 flex-shrink-0 rounded-full bg-green-50 flex items-center justify-center">
+                    <item.icon className="w-7 h-7 text-brand-green stroke-[2.5]" />
                   </div>
-                  <span className="text-[19px] font-bold text-brand-navy">{item.text}</span>
+                  <span className="text-[22px] sm:text-[24px] font-bold text-brand-navy leading-snug">{item.text}</span>
                 </div>
               ))}
             </div>
@@ -382,7 +385,7 @@ export default function Program1Page() {
         </section>
 
         {/* INVESTMENT */}
-        <section className="py-16 px-4 bg-grid-pattern/50">
+        <section id="investment" className="py-16 px-4 bg-grid-pattern/50">
           <div className="text-center mb-12">
             <h2 className="text-[28px] sm:text-[36px] font-black uppercase text-brand-navy">
               INVESTMENT
@@ -396,8 +399,10 @@ export default function Program1Page() {
                   <div className="text-[19px] font-black text-brand-green uppercase bg-green-50 px-3 py-1 rounded-full inline-block mb-3">
                     PAY IN FULL
                   </div>
-                  <div className="text-[42px] font-black text-brand-navy leading-none">£300</div>
-                  <div className="text-gray-400 font-semibold text-base mt-1">+ VAT</div>
+                  <div className="text-[42px] font-black text-brand-navy leading-none flex items-start">
+                    £300
+                    <span className="text-[16px] text-gray-400 font-semibold ml-2 mt-1">+ VAT</span>
+                  </div>
                 </div>
                 <div className="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center border-4 border-white shadow-sm">
                   <CheckCircle2 className="w-8 h-8 text-brand-green" />
@@ -411,10 +416,6 @@ export default function Program1Page() {
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-brand-green mt-0.5" />
                   <span className="text-gray-700 font-medium text-[19px]">All features included</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-brand-green mt-0.5" />
-                  <span className="text-gray-700 font-medium text-[19px]">Save £100 by paying in full</span>
                 </div>
               </div>
               <Link
@@ -432,8 +433,10 @@ export default function Program1Page() {
                   <div className="text-[19px] font-black text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded-full inline-block mb-3">
                     PAY IN 3 INSTALMENTS
                   </div>
-                  <div className="text-[42px] font-black text-brand-navy leading-none">£100 <span className="text-xl">/ m</span></div>
-                  <div className="text-gray-400 font-semibold text-base mt-1">+ VAT for 3 months</div>
+                  <div className="text-[42px] font-black text-brand-navy leading-none flex items-start">
+                    £100
+                    <span className="text-[16px] text-gray-400 font-semibold ml-2 mt-1">+ VAT for 3 months</span>
+                  </div>
                 </div>
                 <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center border-4 border-white shadow-sm">
                   <CalendarDays className="w-8 h-8 text-blue-600" />
@@ -454,7 +457,7 @@ export default function Program1Page() {
                 </div>
               </div>
               <Link
-                href={checkoutUrl}
+                href="https://buy.stripe.com/00wcN67wZfIP9ca5vLaMU00"
                 target="_blank"
                 className="w-full bg-blue-600 text-white py-4 rounded-full font-black uppercase tracking-wide flex items-center justify-center gap-2 hover:bg-blue-700 transition mt-auto"
               >
@@ -581,14 +584,14 @@ export default function Program1Page() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <Link
-                  href={checkoutUrl}
-                  target="_blank"
+                  href="#investment"
                   className="bg-brand-green text-white px-8 py-4 rounded-lg font-black uppercase tracking-wide hover:bg-green-700 transition text-center"
                 >
                   ENROLL NOW &gt;
                 </Link>
                 <Link
-                  href="#"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSca2Cg9WMEDCA0ytT52QT0kvgF8s2cbW767Yo3dQyr_auUVCA/viewform"
+                  target="_blank"
                   className="bg-white/10 border border-white/20 text-white px-8 py-4 rounded-lg font-black uppercase tracking-wide hover:bg-white/20 transition text-center"
                 >
                   BOOK A WEBINAR &gt;

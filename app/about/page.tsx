@@ -56,7 +56,7 @@ export default function AboutPage() {
                 <Link href="https://forms.gle/RdmkJVkEP4UD1BJs5" target="_blank" rel="noopener noreferrer" className="bg-brand-navy text-white px-8 py-3 rounded-full font-black uppercase tracking-wide hover:bg-[#1a2f6c] transition flex items-center gap-2">
                   Join Free Webinar
                 </Link>
-                <Link href="/#contact" className="bg-white text-brand-navy border-2 border-brand-navy px-8 py-3 rounded-full font-black uppercase tracking-wide hover:bg-gray-50 transition">
+                <Link href="/contact" className="bg-white text-brand-navy border-2 border-brand-navy px-8 py-3 rounded-full font-black uppercase tracking-wide hover:bg-gray-50 transition">
                   Contact Us
                 </Link>
               </div>
@@ -660,7 +660,7 @@ export default function AboutPage() {
               <Link href="https://forms.gle/RdmkJVkEP4UD1BJs5" target="_blank" rel="noopener noreferrer" className="bg-brand-navy text-white px-10 py-5 rounded-full font-black uppercase tracking-widest hover:bg-[#15357e] transition shadow-xl">
                 Join Free Webinar
               </Link>
-              <Link href="/#contact" className="bg-transparent text-white border-[3px] border-white px-10 py-5 rounded-full font-black uppercase tracking-widest hover:bg-white/10 transition">
+              <Link href="/contact" className="bg-transparent text-white border-[3px] border-white px-10 py-5 rounded-full font-black uppercase tracking-widest hover:bg-white/10 transition">
                 Contact Us
               </Link>
             </div>
