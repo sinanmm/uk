@@ -220,17 +220,20 @@ export default function Program2Page() {
             </div>
 
             <div className="flex-1 relative aspect-[4/3] w-full max-w-[650px] mx-auto mt-12 lg:mt-0">
+              <div className="absolute inset-0 rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(7,22,66,0.12)] border-[4px] border-white/50">
+                <Image
+                  src="/images/startup_collaboration.png"
+                  alt="Startup team discussion"
+                  fill
+                  className="object-cover object-center hover:scale-105 transition-transform duration-700"
+                  priority
+                />
+              </div>
+
               <div className="absolute -top-4 -right-2 sm:-top-8 sm:-right-8 w-36 h-36 rounded-full bg-brand-navy border-[6px] border-brand-green flex flex-col items-center justify-center text-center shadow-xl z-20">
                 <Rocket className="w-8 h-8 text-white mb-2" />
                 <span className="text-white font-black text-[14px] leading-tight uppercase px-2">FROM IDEA<br />TO LAUNCH<br />TO SALES</span>
               </div>
-              <Image
-                src="/laptop_analytics.png"
-                alt="Launch and Sales Analytics"
-                fill
-                className="object-contain relative z-10 scale-[1.15]"
-                priority
-              />
             </div>
           </div>
           
@@ -283,8 +286,8 @@ export default function Program2Page() {
         </section>
 
         {/* LEARNING FORMAT */}
-        <section className="py-16 px-4 bg-white-pattern">
-          <div className="text-center mb-12">
+        <section className="py-16 px-4 bg-white-pattern relative">
+          <div className="text-center mb-10 relative z-20">
             <h2 className="text-[28px] sm:text-[36px] font-black uppercase text-brand-green">
               LEARNING FORMAT
             </h2>
@@ -292,7 +295,10 @@ export default function Program2Page() {
               Flexible. Practical. Results-Driven.
             </p>
           </div>
-          <div className="max-w-2xl mx-auto flex flex-col gap-4">
+          <div className="relative aspect-[21/9] w-full max-w-5xl mx-auto rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(7,22,66,0.12)] border-[4px] border-white/50 mb-16 relative z-20">
+             <Image src="/images/startup_growth.png" alt="Business growth and launch illustration" fill className="object-cover object-center hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div className="max-w-2xl mx-auto flex flex-col gap-4 relative z-20">
             <div className="grid grid-cols-2 gap-4">
               <div className="border border-green-200 rounded-[20px] p-5 flex items-center gap-4 bg-green-50/30">
                 <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
@@ -488,7 +494,7 @@ export default function Program2Page() {
                 </div>
               </div>
               <Link
-                href={checkoutUrl}
+                href="https://buy.stripe.com/bJeaEP6je4jI2Bodz2dIA02"
                 target="_blank"
                 className="w-full bg-brand-green text-white py-4 rounded-full font-black uppercase tracking-wide flex items-center justify-center gap-2 hover:bg-green-700 transition mt-auto"
               >
@@ -526,7 +532,7 @@ export default function Program2Page() {
                 </div>
               </div>
               <Link
-                href={checkoutUrl}
+                href="https://buy.stripe.com/5kQeV5gXS4jI7VI8eIdIA03"
                 target="_blank"
                 className="w-full bg-blue-600 text-white py-4 rounded-full font-black uppercase tracking-wide flex items-center justify-center gap-2 hover:bg-blue-700 transition mt-auto"
               >

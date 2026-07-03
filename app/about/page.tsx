@@ -61,11 +61,10 @@ export default function AboutPage() {
                 </Link>
               </div>
             </div>
-            <div className="flex-1 w-full relative max-w-lg mx-auto lg:max-w-none">
-              <div className="aspect-square relative">
-                <Image src="/about_hero.png" alt="Startup Innovation" fill className="object-contain drop-shadow-xl hover:-translate-y-2 transition-transform duration-500 scale-[1.1]" priority />
-              </div>
+            <div className="flex-1 relative aspect-[4/3] w-full max-w-[650px] mx-auto rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(7,22,66,0.12)] border-[4px] border-white/50">
+              <Image src="/images/about-learning-01.png" alt="Startup Innovation" fill className="object-cover object-center hover:scale-105 transition-transform duration-700" priority />
             </div>
+
           </div>
         </section>
 
@@ -100,6 +99,9 @@ export default function AboutPage() {
                   <h3 className="font-black text-brand-navy text-[19px] leading-snug">{item.title}</h3>
                 </div>
               ))}
+            </div>
+            <div className="mt-12 relative aspect-[21/9] md:aspect-[21/7] rounded-[32px] overflow-hidden shadow-2xl border border-slate-100 hidden md:block">
+              <Image src="/images/about-roadmap-01.png" alt="Business roadmap and planning" fill className="object-cover" />
             </div>
           </div>
         </section>
@@ -232,7 +234,7 @@ export default function AboutPage() {
         </section>
 
         {/* SECTION 6: WHY PSA EXISTS */}
-        <section className="py-24 bg-white">
+        <section className="py-24 bg-white relative">
           <div className="max-w-[1200px] mx-auto px-4">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl md:text-4xl font-black text-brand-navy uppercase mb-6">Why Pure Startup Academy Exists</h2>
@@ -242,7 +244,9 @@ export default function AboutPage() {
                 Pure Startup Academy was created to provide a practical bridge between education and entrepreneurship. It helps future founders understand what to do, how to do it, and how to move forward with confidence.
               </p>
             </div>
-
+            <div className="relative aspect-[21/9] w-full max-w-5xl mx-auto rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(7,22,66,0.12)] border-[4px] border-gray-100 mb-16">
+               <Image src="/images/about-mentor-01.png" alt="Experienced mentor guiding a founder" fill className="object-cover object-center hover:scale-105 transition-transform duration-700" />
+            </div>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div className="bg-gray-50 border border-gray-200 rounded-[24px] p-8 lg:p-10 relative overflow-hidden shadow-sm">
                 <div className="absolute top-0 left-0 w-full h-2 bg-gray-300"></div>

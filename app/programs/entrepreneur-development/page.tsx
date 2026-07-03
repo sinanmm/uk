@@ -118,26 +118,29 @@ export default function Program3Page() {
               </div>
             </div>
             
-            <div className="flex-1 relative aspect-[4/3] w-full max-w-[650px] mx-auto mt-12 lg:mt-0">
-               <Image
-                 src="/rocket_growth.png"
-                 alt="Business Growth Rocket"
-                 fill
-                 className="object-contain relative z-10 scale-[1.15]"
-                 priority
-               />
+            <div className="flex-1 relative aspect-[4/3] w-full max-w-[650px] mx-auto mt-12 lg:mt-0 rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(7,22,66,0.12)] border-[4px] border-white/50">
+              <Image
+                src="/images/startup_planning.png"
+                alt="Business strategy and planning"
+                fill
+                className="object-cover object-center hover:scale-105 transition-transform duration-700"
+                priority
+              />
             </div>
           </div>
         </section>
 
         {/* CURRICULUM */}
-        <section className="py-20 px-4 bg-white-pattern border-t border-gray-100">
-          <div className="text-center mb-16 flex items-center justify-center gap-6">
+        <section className="py-20 px-4 bg-white-pattern border-t border-gray-100 relative">
+          <div className="text-center mb-10 flex items-center justify-center gap-6 relative z-20">
             <div className="hidden md:flex gap-1"><div className="w-12 h-[2px] bg-brand-green opacity-50"></div><div className="w-3 h-[2px] bg-brand-green opacity-50"></div></div>
             <h2 className="text-[28px] sm:text-[36px] font-black uppercase text-brand-navy tracking-wide">
               10 POWERFUL <span className="text-brand-green">MODULES</span>
             </h2>
             <div className="hidden md:flex gap-1"><div className="w-3 h-[2px] bg-brand-green opacity-50"></div><div className="w-12 h-[2px] bg-brand-green opacity-50"></div></div>
+          </div>
+          <div className="relative aspect-[21/9] w-full max-w-5xl mx-auto rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(7,22,66,0.12)] border-[4px] border-white/50 mb-16 relative z-20">
+             <Image src="/images/startup_presentation.png" alt="Business growth presentation" fill className="object-cover object-center hover:scale-105 transition-transform duration-700" />
           </div>
           <div className="max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-5 gap-6">
             {curriculum.map((item, i) => (
@@ -405,7 +408,7 @@ export default function Program3Page() {
                   <span className="text-brand-navy font-bold text-[20px] uppercase tracking-wide">CERTIFICATE OF COMPLETION</span>
                 </div>
               </div>
-              <Link href={checkoutUrl} target="_blank" className="w-full bg-brand-green text-white py-4 rounded-full font-black uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-green-700 transition">
+              <Link href="https://buy.stripe.com/cNi8wH5fa3fE7VI7aEdIA04" target="_blank" className="w-full bg-brand-green text-white py-4 rounded-full font-black uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-green-700 transition">
                 ENROLL NOW &rarr;
               </Link>
               <div className="text-center mt-5">
@@ -447,7 +450,7 @@ export default function Program3Page() {
                   <span className="text-brand-navy font-bold text-[20px] uppercase tracking-wide">CERTIFICATE OF COMPLETION</span>
                 </div>
               </div>
-              <Link href="https://buy.stripe.com/00wcN67wZfIP9ca5vLaMU00" target="_blank" className="w-full bg-blue-600 text-white py-4 rounded-full font-black uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-blue-700 transition">
+              <Link href="https://buy.stripe.com/eVq28j7nibMa1xkamQdIA05" target="_blank" className="w-full bg-blue-600 text-white py-4 rounded-full font-black uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-blue-700 transition">
                 ENROLL NOW &rarr;
               </Link>
               <div className="text-center mt-5">

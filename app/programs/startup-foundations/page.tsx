@@ -237,21 +237,23 @@ export default function Program1Page() {
                 >
                   ENROLL NOW &gt;
                 </Link>
-                <Link
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSca2Cg9WMEDCA0ytT52QT0kvgF8s2cbW767Yo3dQyr_auUVCA/viewform"
-                  target="_blank"
+                <a
+                  href="/Pure_Startup_Academy_Idea_to_Launch_Prospectus.pdf"
+                  download="Pure_Startup_Academy_Idea_to_Launch_Prospectus.pdf"
+                  aria-label="Download Pure Startup Academy Idea to Launch Prospectus"
                   className="border-2 border-brand-green text-brand-green px-8 py-4 rounded-full font-black uppercase tracking-wide hover:bg-green-50 transition"
                 >
-                  BOOK A WEBINAR
-                </Link>
+                  GET A PROSPECTUS
+                </a>
               </div>
             </div>
-            <div className="flex-1 relative aspect-[4/3] w-full max-w-lg mx-auto">
+            <div className="flex-1 relative aspect-[4/3] w-full max-w-[650px] mx-auto mt-12 lg:mt-0 rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(7,22,66,0.12)] border-[4px] border-white/50">
               <Image
-                src="/notebook_launch.png"
-                alt="Idea to Launch Notebook"
+                src="/images/foundations-launch-01.png"
+                alt="Idea to Launch"
                 fill
-                className="object-contain"
+                className="object-cover object-center hover:scale-105 transition-transform duration-700"
+                priority
               />
             </div>
           </div>
@@ -268,11 +270,14 @@ export default function Program1Page() {
         </section>
 
         {/* OUTCOMES SECTION */}
-        <section className="py-16 px-4 bg-prog1-pattern">
-          <h2 className="text-center text-[32px] sm:text-[42px] font-black uppercase text-brand-green mb-14">
+        <section className="py-16 px-4 bg-prog1-pattern relative overflow-hidden">
+          <h2 className="text-center text-[32px] sm:text-[42px] font-black uppercase text-brand-green mb-10 relative z-20">
             BY THE END OF THIS PROGRAMME, YOU WILL:
           </h2>
-          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-x-12 gap-y-8">
+          <div className="relative aspect-[21/9] w-full max-w-5xl mx-auto rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(7,22,66,0.12)] border-[4px] border-white/50 mb-16 relative z-20">
+             <Image src="/images/foundations-validation-01.png" alt="Founder conducting a customer interview" fill className="object-cover object-center hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-x-12 gap-y-8 relative z-20">
             <div className="space-y-8">
               {outcomesLeft.map((item, i) => (
                 <div key={i} className="flex items-center gap-5">
@@ -419,7 +424,7 @@ export default function Program1Page() {
                 </div>
               </div>
               <Link
-                href={checkoutUrl}
+                href="https://buy.stripe.com/9B6aEP0YUeYmek60MgdIA00"
                 target="_blank"
                 className="w-full bg-brand-green text-white py-4 rounded-full font-black uppercase tracking-wide flex items-center justify-center gap-2 hover:bg-green-700 transition mt-auto"
               >
@@ -457,7 +462,7 @@ export default function Program1Page() {
                 </div>
               </div>
               <Link
-                href="https://buy.stripe.com/00wcN67wZfIP9ca5vLaMU00"
+                href="https://buy.stripe.com/00wdR10YU3fE4Jw7aEdIA01"
                 target="_blank"
                 className="w-full bg-blue-600 text-white py-4 rounded-full font-black uppercase tracking-wide flex items-center justify-center gap-2 hover:bg-blue-700 transition mt-auto"
               >
@@ -468,14 +473,17 @@ export default function Program1Page() {
         </section>
 
         {/* WHATS INCLUDED */}
-        <section className="py-16 px-4 bg-white-pattern">
-          <div className="text-center mb-12">
+        <section className="py-16 px-4 bg-white-pattern relative">
+          <div className="text-center mb-10 relative z-20">
             <h2 className="text-[28px] sm:text-[36px] font-black uppercase text-brand-green">
               WHAT'S INCLUDED?
             </h2>
             <p className="text-gray-500 font-semibold mt-1">Everything you need to launch and grow your business.</p>
           </div>
-          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-x-12 gap-y-6">
+          <div className="relative aspect-[21/9] w-full max-w-5xl mx-auto rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(7,22,66,0.12)] border-[4px] border-white/50 mb-16 relative z-20">
+             <Image src="/images/foundations-planning-01.png" alt="Business registration paperwork" fill className="object-cover object-center hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-x-12 gap-y-6 relative z-20">
             <div className="space-y-6">
               {whatsIncludedLeft.map((item, i) => (
                 <div key={i} className="bg-gray-50/70 rounded-[20px] p-5 flex items-center gap-5">
@@ -589,13 +597,14 @@ export default function Program1Page() {
                 >
                   ENROLL NOW &gt;
                 </Link>
-                <Link
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSca2Cg9WMEDCA0ytT52QT0kvgF8s2cbW767Yo3dQyr_auUVCA/viewform"
-                  target="_blank"
+                <a
+                  href="/Pure_Startup_Academy_Idea_to_Launch_Prospectus.pdf"
+                  download="Pure_Startup_Academy_Idea_to_Launch_Prospectus.pdf"
+                  aria-label="Download Pure Startup Academy Idea to Launch Prospectus"
                   className="bg-white/10 border border-white/20 text-white px-8 py-4 rounded-lg font-black uppercase tracking-wide hover:bg-white/20 transition text-center"
                 >
-                  BOOK A WEBINAR &gt;
-                </Link>
+                  GET A PROSPECTUS &gt;
+                </a>
               </div>
             </div>
           </div>

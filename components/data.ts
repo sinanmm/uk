@@ -25,7 +25,7 @@ import {
   X,
 } from "lucide-react";
 
-export const navItems = ["Home", "Programs", "About Us", "Free Downloads", "Contact"];
+export const navItems = ["Home", "Programs", "About Us", "Contact"];
 
 export const audienceCards = [
   { label: "Students", icon: GraduationCap },

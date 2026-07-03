@@ -183,20 +183,17 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative min-h-[360px] lg:min-h-[520px]">
-              <div className="absolute inset-0">
-                <Image
-                  src="/growth.png"
-                  alt="Pure Startup Academy hero visual"
-                  fill
-                  priority
-                  sizes="(max-width: 1024px) 100vw, 54vw"
-                  className="object-contain object-center"
-                />
-              </div>
-
+            <div className="flex-1 relative aspect-[4/3] w-full max-w-[650px] mx-auto mt-12 lg:mt-0 rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(7,22,66,0.12)] border-[4px] border-white/50">
+              <Image
+                src="/growth.png"
+                alt="Startup founder planning business idea"
+                fill
+                priority
+                className="object-contain object-center"
+              />
             </div>
           </div>
+
         </section>
 
         <section className="section-shell pt-14 sm:pt-20">
@@ -273,21 +270,29 @@ export default function Home() {
         </section>
 
         <section id="about-us" className="section-shell pt-16 sm:pt-20">
-          <TitleBlock prefix="WHO" suffix="ARE OUR PROGRAMMES FOR?" />
-          <div className="mt-10 grid gap-8 border-y border-slate-200 py-8 md:grid-cols-3 xl:grid-cols-5 xl:divide-x xl:divide-slate-200">
-            {audience.map((item) => {
-              const Icon = item.icon;
-
-              return (
-                <div key={item.label} className="flex flex-col items-center px-5 text-center">
-                  <Icon size={34} className="text-brand-green" strokeWidth={1.8} />
-                  <p className="mt-4 text-[20px] font-black leading-tight text-brand-navy">{item.label}</p>
-                </div>
-              );
-            })}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <TitleBlock prefix="WHO" suffix="ARE OUR PROGRAMMES FOR?" />
+              <div className="mt-10 grid gap-6 md:grid-cols-2">
+                {audience.map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <div key={item.label} className="flex items-center gap-4 p-4 rounded-xl border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-colors">
+                      <div className="w-12 h-12 rounded-full bg-brand-green/10 flex items-center justify-center shrink-0">
+                        <Icon size={24} className="text-brand-green" strokeWidth={1.8} />
+                      </div>
+                      <p className="text-[18px] font-bold leading-tight text-brand-navy">{item.label}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+            <div className="relative aspect-[4/3] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(7,22,66,0.12)] border border-slate-100 group">
+               <Image src="/images/home-team-01.png" alt="Diverse startup team collaborating" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+            </div>
           </div>
         </section>
-
+        
         <section className="section-shell pt-16 sm:pt-20">
           <div className="grid gap-8 lg:grid-cols-3 xl:gap-10">
             {/* PAIN CARD */}
@@ -367,7 +372,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="success-stories" className="section-shell pt-16 sm:pt-20">
+        <section id="success-stories" className="section-shell pt-16 sm:pt-20 relative">
+
           <TitleBlock prefix="WHY" suffix="PURE STARTUP ACADEMY?" />
           <div className="mt-10 grid gap-8 border-y border-slate-200 py-8 md:grid-cols-3 xl:grid-cols-5 xl:divide-x xl:divide-slate-200">
             {whyItems.map((item) => {
