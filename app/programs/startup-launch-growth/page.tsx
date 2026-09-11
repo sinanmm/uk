@@ -325,7 +325,7 @@ export default function Program2Page() {
               </div>
               <div>
                 <div className="text-[15px] font-black text-yellow-600 uppercase tracking-wider">SESSION LENGTH</div>
-                <div className="font-bold text-brand-navy text-[19px]">2 Hours per Session</div>
+                <div className="font-bold text-brand-navy text-[19px]">1 Hours per Session</div>
               </div>
             </div>
             <div className="border border-purple-200 rounded-[20px] p-5 flex items-center gap-4 bg-purple-50/30">

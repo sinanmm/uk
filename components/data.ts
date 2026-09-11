@@ -97,7 +97,7 @@ export const included = [
 export const learningFormat = [
   { label: "Duration", value: "3 Months", icon: CalendarDays },
   { label: "Schedule", value: "2 Sessions per Week", icon: CalendarDays },
-  { label: "Session Length", value: "2 Hours per Session", icon: Clock3 },
+  { label: "Session Length", value: "1 Hours per Session", icon: Clock3 },
   { label: "Mode", value: "Live Online + Recorded Sessions", icon: MonitorPlay },
   { label: "Learning Style", value: "Interactive Workshops & Activities", icon: UsersRound },
 ];

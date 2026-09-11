@@ -444,7 +444,7 @@ export default function Home() {
                 </div>
                 <div className="mt-6 rounded-[18px] bg-white p-5 text-center text-brand-navy">
                   <p className="text-[20px] font-semibold text-brand-green">Next Webinar</p>
-                  <p className="mt-2 text-[34px] font-black uppercase leading-none">5 JULY 2026</p>
+                  <p className="mt-2 text-[34px] font-black uppercase leading-none">October 18<span className="text-[20px] align-super">th</span> 2026</p>
                   <p className="mt-2 text-[20px] font-semibold uppercase text-slate-500">Sunday</p>
                   <p className="mt-3 text-[20px] font-black uppercase">02:00 PM UK Time</p>
                 </div>

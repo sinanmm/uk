@@ -328,7 +328,7 @@ export default function Program3Page() {
               </div>
               <div>
                 <div className="text-[19px] font-black text-yellow-500 uppercase tracking-widest mb-1">SESSION LENGTH</div>
-                <div className="font-bold text-brand-navy text-[19px]">2 Hours per Session</div>
+                <div className="font-bold text-brand-navy text-[19px]">1 Hours per Session</div>
               </div>
             </div>
             
